@@ -2,38 +2,171 @@
 <head>
   <style>
 
-  #holder {
-    width: 500px;
-    margin: 0px auto;
-    border: 1px solid black;
-    padding: 20px 20px 20px 20px;
-    border-radius: 20px;
+  body {
+    background-image: url("../images/footer_lodyas.png");
   }
 
-  #holder h {
+
+  @font-face {
+    font-family: PTSans;
+    src: url("../fonts/PTN57F.ttf");
+  }
+
+
+  #header {
+    margin:0 auto;
+    width: 70%;
+    height: auto;
+    background-color: #F2F1ED;
+    box-shadow: -5px 5px 20px black;
+
+  }
+
+  #title {
+    height: 100px;
+    max-width: 30%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #title h1 {
+
+    font-family: PTSans;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 2px;
+  }
+
+  #navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+  }
+
+  #navbar_holder {
+    height: 35px;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .nav_button {
+    color: #F2F1ED;
+    font-family: PTSans;
+    margin: 8px 5px 5px 83px;
     font-size: 2em;
-    color: blue;
+    float: left;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .nav_button:hover {
+    box-shadow: 0px 0px 10px white;
+  }
+
+  .blog {
+    border: 1px solid white;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #F2F1ED;
+  }
+    
+  #main_content {
+    width: 70%;
+    margin: -20px auto;
+    background-color: #F2F1ED;
+    box-shadow: -5px 5px 20px black;
+  }
+
+  #page_info {
+    margin: 0px auto;
+    max-width: 70%;
+    padding: 20px 20px 20px 20px;
+  }
+
+  #page_info h1 {
+    font-size: 2em;
+    color: black;
     font-family: helvetica;
   }
 
-  #holder p {
+  #page_info p {
     font-size: 1em;
     font-family: helvetica;
   }
 
   </style>
   <title> 
-    Basic Webpage
+    CoomsBLog
   </title>
 </head>
 <body>
-  <div id="holder">
-    <h1>
-      Header
-    </h1>
-    <p>
-      Some text in a paragraph
-    </p>
+  <div id="header">
+    <div id="title"> 
+      <h1> CoomsBlog </h1>
+    </div>
+    <div id="navbar">
+      <div id="navbar_holder">
+        <a href="../index.html" class="link"><div class="nav_button home">
+          HOME
+        </div>
+        </a>
+        <a href="blog/c1-reflection-blog.html" class="link"><div class="nav_button blog">
+          BLOG
+        </div>
+        </a>
+        <a href="" class="link"><div class="nav_button misc">
+          MISC
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="main_content">
+    <div id="page_info">
+      <h1>
+        C1 Reflection Blog
+      </h1>
+      <p>
+        <strong>What's your take on the DBC/EDA experience?</strong>
+        <br>
+        The experience is without a doubt very unique. EDA wants all their students to feel they aren't paying for a service or product, but rather invaluable knowledge
+        and an unforgetable experience where the whole class feels as if it were a family. This approach, for me, is very new and honestly refreshing after attending other courses where I've paid for tuition that felt either forced, or just wasn't up to scratch.
+      </p>
+      <br>
+      <p>
+        <strong>What are your impressions?</strong>
+        <br>
+        When I found DevAcademy on google I had a look at their site and the knew cirriculum was right for me. However when read about other parts of the course (yoga, mindfullness exercises etc.) and their progressive approach to the world, I was a bit skeptical that this place might be a bit too "modern" for me. However after meeting some of the staff and the rest of my cohort I know that it will be an interesting and fun experience getting to learn and work with such a broad group of people.
+      </p>
+      <br>
+      <p>
+        <strong>How do you see yourself engaging with this type of culture?</strong>
+        <br>
+        Ultimately, it will be a new experience for me, but change is good! I'm used to being given assignment, a little bit of an explanation and a "please email me if you need help". But now I'm able to communicate with my cohort at any time and we can work together to make sure that we not only pass, but bring out the best out of
+        eachother.
+      </p>
+      <br>
+      <p>
+        <strong>Have your expectations of EDA changed? If so, how?</strong>
+        <br>
+        Nope, I know this will be a bit of a change for me, but EDA will be a great place to study.
+      </p>
+      <br>
+      <p>
+        <strong>Are you excited to participate in this kind of learning environment? Does it make you nervous?</strong>
+        <br>
+        Very excited, the fact that I get a complete change and entirely different experience makes me keen to begin. And yeah everyone's a little nervous when the begin,
+        but once you get going, there's nothing stopping you. Same goes for me; I want to strive to do the best I can and leave with an unforgettable experience and knowledge
+        that I can use inside and outside the workplace.
+      </p>
+    </div>
   </div>
 </body>
 </html>
