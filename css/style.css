@@ -1,0 +1,79 @@
+body {
+    background-image: url("../images/footer_lodyas.png");
+  }
+  @font-face {
+    font-family: PTSans;
+    src: url("../fonts/PTN57F.ttf");
+  }
+  #header {
+    margin:0 auto;
+    width: 70%;
+    height: auto;
+    background-color: #F2F1ED;
+    box-shadow: -5px 5px 20px black;
+  }
+  #title {
+    height: 100px;
+    max-width: 30%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #title h1 {
+    font-family: PTSans;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 2px;
+  }
+  #navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    display: table;
+  }
+  #navbar_holder {
+    display: table;
+    width: 50%;
+    text-align: center;
+    margin: 15px auto;
+  }
+  .nav_button {
+    color: #F2F1ED;
+    font-family: PTSans;
+    text-align: center;
+    font-size: 2em;
+    padding: 0px 5px 0px 5px;
+  }
+  .link {
+    text-decoration: none;
+    color: #F2F1ED;
+    display: table-cell;
+  }
+  .link p:hover {
+    text-decoration: underline;
+    -webkit-transition: all .5s ease-in-out; 
+  }
+    
+  #main_content {
+    width: 70%;
+    margin: -20px auto;
+    background-color: #F2F1ED;
+    box-shadow: -5px 5px 20px black;
+  }
+  #page_info {
+    margin: 0px auto;
+    max-width: 70%;
+    padding: 20px 20px 20px 20px;
+  }
+  #page_info h1 {
+    font-size: 2em;
+    color: black;
+    font-family: helvetica;
+  }
+  #page_info p {
+    font-size: 1em;
+    font-family: helvetica;
+  }
