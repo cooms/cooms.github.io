@@ -1,51 +1,112 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+
+  body {
     background-image: url("../images/footer_lodyas.png");
+    /*background-repeat: no-repeat;*/
   }
   @font-face {
     font-family: PTSans;
     src: url("../fonts/PTN57F.ttf");
   }
   #header {
-    margin:0 auto;
-    width: 70%;
+    margin: 0px auto;
+    width: 100%;
     height: auto;
-    background-color: #F2F1ED;
+    background-color: white;
     box-shadow: -5px 5px 20px black;
+    position: relative;
   }
   #title {
     height: 100px;
     max-width: 30%;
     margin: 0 auto;
     position: relative;
+    font-family: helvetica;
+    padding: 10px 10px 10px 10px;
   }
   #title h1 {
     font-family: PTSans;
     text-align: center;
-    font-size: 5em;
+    font-size: 5.5em;
     letter-spacing: 2px;
+  }
+  #title p {
+    float: right;
+    text-align: center;
+    font-family: PTSans;
   }
   #navbar {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: black;
     position: relative;
-    padding: 0px 0px 10px 0px;
+    padding: 5px 0px 0px 0px;
     text-align: center;
-    margin: 20px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
     display: table;
   }
   #navbar_holder {
     display: table;
     width: 50%;
     text-align: center;
-    margin: 15px auto;
+    margin: 0px auto;
+    position: relative;
   }
   .nav_button {
     color: #F2F1ED;
     font-family: PTSans;
     text-align: center;
     font-size: 2em;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 0px 0px 5px;
   }
   .link {
     text-decoration: none;
@@ -57,23 +118,65 @@ body {
     -webkit-transition: all .5s ease-in-out; 
   }
     
-  #main_content {
+  #main_wrapper {
     width: 70%;
-    margin: -20px auto;
-    background-color: #F2F1ED;
+    margin:0px auto;
+    background-color: white;
     box-shadow: -5px 5px 20px black;
+    position: relative;
   }
-  #page_info {
+  #page_desc {
     margin: 0px auto;
     max-width: 70%;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
   }
-  #page_info h1 {
-    font-size: 2em;
+  #page_desc h1 {
+    font-size: 2.5em;
     color: black;
     font-family: helvetica;
   }
-  #page_info p {
+  #page_desc p {
     font-size: 1em;
     font-family: helvetica;
+  }
+  #page_content {
+    font-family: helvetica;
+
+    padding: 20px 2px 20px 2px;
+    margin: 0px auto;
+    width: 75%;
+    height: auto;
+  }
+  #page_content h1 {
+    font-size: 2em;
+  }
+  #page_content h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  #page_content p {
+    font-size: 1em;
+  }
+  .question {
+    padding: 10px 10px 10px 10px;
+  }
+  .img_1 {
+    width: 350px;
+    height: 200px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .img_2 {
+    width: 300px;
+    height: 200px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .left {
+    float: left;
   }
