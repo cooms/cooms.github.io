@@ -57,37 +57,51 @@ table {
     font-family: PTSans;
     src: url("../fonts/PTN57F.ttf");
   }
+  @font-face {
+    font-family: raleway;
+    src: url("../fonts/Raleway-Regular.ttf");
+  }
+  @font-face {
+    font-family: caviar;
+    src: url("../fonts/CaviarDreams.ttf");
+  }
+  @font-face {
+    font-family: glacial;
+    src: url("../fonts/GlacialIndifference-Regular.otf");
+  }
   #header {
     margin: 0px auto;
     width: 100%;
-    height: auto;
+    height: 100px;
     background-color: white;
-    box-shadow: -5px 5px 20px black;
-    position: relative;
+    box-shadow: -3px 0px 20px grey;
+    position: fixed;
+    z-index: 5;
   }
   #title {
-    height: 100px;
+    height: auto;
     max-width: 30%;
-    margin: 0 auto;
+    float:left;
     position: relative;
     font-family: helvetica;
     padding: 10px 10px 10px 10px;
   }
   #title h1 {
-    font-family: PTSans;
-    text-align: center;
-    font-size: 5.5em;
-    letter-spacing: 2px;
+    font-family: raleway;
+    text-align: left;
+    font-size: 4em;
+    letter-spacing: -4px;
   }
   #title p {
     float: right;
     text-align: center;
-    font-family: PTSans;
+    font-family: glacial;
   }
   #navbar {
-    width: 100%;
-    height: 40px;
-    background-color: black;
+    /*border: 1px solid red;*/
+    float: right;
+    width: 40%;
+    height: 100px;
     position: relative;
     padding: 5px 0px 0px 0px;
     text-align: center;
@@ -95,6 +109,8 @@ table {
     display: table;
   }
   #navbar_holder {
+    /*border: 1px solid red;*/
+    float: right;
     display: table;
     width: 50%;
     text-align: center;
@@ -102,10 +118,11 @@ table {
     position: relative;
   }
   .nav_button {
-    color: #F2F1ED;
-    font-family: PTSans;
+    margin-top: 30px;
+    color: black;
+    font-family: glacial;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 0px 0px 0px 5px;
   }
   .link {
@@ -122,7 +139,8 @@ table {
     width: 70%;
     margin:0px auto;
     background-color: white;
-    box-shadow: -5px 5px 20px black;
+    padding: 100px 0px 0px 0px;
+    /*box-shadow: -5px 5px 20px black;*/
     position: relative;
   }
   #page_desc {
@@ -134,14 +152,14 @@ table {
   #page_desc h1 {
     font-size: 2.5em;
     color: black;
-    font-family: helvetica;
+    font-family: glacial;
   }
   #page_desc p {
     font-size: 1em;
-    font-family: helvetica;
+    font-family: glacial;
   }
   #page_content {
-    font-family: helvetica;
+    font-family: glacial;
 
     padding: 20px 2px 20px 2px;
     margin: 0px auto;
