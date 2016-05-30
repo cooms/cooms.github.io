@@ -127,10 +127,10 @@ table {
   }
   .link {
     text-decoration: none;
-    color: #F2F1ED;
+    color: black;
     display: table-cell;
   }
-  .link p:hover {
+  .link:hover {
     text-decoration: underline;
     -webkit-transition: all .5s ease-in-out; 
   }
