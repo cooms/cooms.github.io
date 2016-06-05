@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+@font-face {
+  src: url("../fonts/GlacialIndifference-Regular.otf");
+  font-family: glacial;
+}
+
+@font-face {
+  src: url("../fonts/GlacialIndifference-Regular.otf");
+  font-family: glacial;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-family: raleway;
+}
+
+
+body {
+  background-color: black;
+}
+
+.header {
+  
+  margin: 0px 0px 0px 0px;
+  position: fixed;
+  z-index: 2;
+
+  box-shadow: 0px 3px 20px grey;
+  background-color: white;
+  
+  width: 100%;
+  height: 75px;
+}
+
+.title {
+  margin: -10px 0px 0px 0px;
+  float: left;
+
+  width: 300px;
+  height:75px;
+}
+
+.title h1 {
+
+  padding: 10px 10px 10px 10px;
+
+  font-size: 3.5em;
+  font-family: raleway;
+  letter-spacing: -4px;
+}
+
+.title p {
+
+  margin: -10px 0px 0px 0px;
+  float: right;
+  position: relative;
+
+  font-family: raleway;
+}
+
+.navigation {
+
+  float: right;
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 500px;
+  height: 75px;
+}
+
+.navButton {
+  padding: 25px 3px 49px 0px;
+  margin: 0px 20px 0px 0px;
+
+  font-family: glacial;
+  font-size: 1.3em;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.navButton:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.mainWrapper {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+}
+
+.spacer {
+  height: 90px;
+  background-color: white;
+}
+
+.pageContent {
+
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  background-color: white;
+}
+
+.pageContent h1 {
+  font-size: 2.4em;
+  font-family: raleway;
+
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.pageContent p {
+  font-size: 1.1em;
+  font-family: raleway;
+  text-align: center;
+
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+
+  padding: 10px 10px 10px 10px;
+}
+
+.footer {
+  max-width: 960px;
+  height: auto;
+
+  background-color: white;
+  margin: 0px auto;
+}
+
+.socialMedia {
+  max-width: 35%;
+  height: auto;
+
+  padding: 5px 5px 5px 5px;
+  margin: 7px auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.smLink {
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.footerNav {
+  max-width: 50%;
+  height: auto;
+
+  padding: 5px 5px 5px 5px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.navButtonFooter {
+
+  font-family: glacial;
+  font-size: 1.2em;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.indexBlog {
+  margin: 0px auto;
+  text-align: center;
+  font-family: raleway;
+  font-size: 1.2em;
+}
+
+.blogTitle {
+  padding: 10px 0px 0px 20px;
+  
+  color: black;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-family: glacial;
+}
+
+.blogsContainerIndex {
+  width: 95%;
+  height: 500px;
+
+  padding: 10px 10px 10px 10px;
+  margin: 50px auto;
+
+  text-align: center;
+
+}
+
+.blogHolderIndex {
+  max-width: 270px;
+  height: auto;
+
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.blogsContainer {
+  max-width: 100%;
+  height: auto;
+
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+}
+
+.blogHolder {
+  max-width: 100%;
+  max-height: 300px;
+
+  padding: 10px 10px 10px 10px;
+  margin: 0px auto 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blogHolder p {
+  max-width: 70%;
+  text-align: left;
+}
+
+.textContent {
+  width: 80%;
+  height: auto;
+  text-align: left;
+  margin: 0 auto;
+
+  font-family: raleway;
+  font-size: 1.1em;
+}
+
+.textContent h2 {
+  font-weight: bold;
+}
