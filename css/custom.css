@@ -274,3 +274,13 @@ h2 {
   background-image: url("../images/time.jpg");
   background-size: 1920px 1080px; 
 }
+
+.blogBG {
+  -webkit-filter: grayscale(100%); filter: grayscale(100%);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.blogBG:hover {
+  -webkit-filter: grayscale(0%); filter: grayscale(0%);
+  -webkit-transition: all .5s ease-in-out;
+}
