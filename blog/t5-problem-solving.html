@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title> 
+    CoomsBlog
+  </title>
+  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <h1> CoomsBlog </h1>
+      <p> A work in progress </p>
+    </div>
+    <div class="navigation">
+      <a class="navButton link" href="../index.html"> HOME </a>
+      <a class="navButton link" href="blogIndex.html"> BLOG </a>
+      <a class="navButton link" href="../about.html"> ABOUT </a>
+      <a class="navButton link" href="../contact.html"> CONTACT </a>
+    </div>
+  </div>
+  <div class="mainWrapper">
+    <div class="pageContent">
+      <div class="spacer"></div>
+      <h1> Technical Blog Part 4 </h1>
+      <br>
+      <div class="textContent">
+        <p>
+          <h2> A problem that I've had (to a non-tech friend) </h2>
+          <br>
+          There's only been one time I've been completely stumped on a question so far,
+          and that was for looping with arrays in JavaScript. I had to find a way to not only get a property name (first name, last name) for each object in that array of objects,
+          but also find the corresponding values for those properties (bill, smith etc).
+          <br><br>
+          I went over the code in my head, jumping back and forth between functions and the objects, checking my syntax was correct.
+          I pseudocoded in my head, but the more I read the code, the more the pseudocoding became verbal until I managed to confuse myself even more.
+          Eventually, I abandonded the question temporarily, hoping the rest of my studies would teach me how to answer a similar question, and they did!
+          <br><br>
+          The whole thing kinda sucked, I kept reading through the code and was frustrated knowing that I knew exactly what I wanted the code to do,
+          but just couldn't quite get the syntax right. I told myself that it didn't matter at that point though; I'm still learning and once I know how to do this specific thing, I can do it again and again.
+          <br><br>
+          Take it easy: On the whole, I learned to take the block easy, don't get worked up just because you don't understand the error you've made just yet.
+          The more you slow down, and take time to read the code top to bottom, in order, and in the RIGHT order, the easier you'll find the issue you've made.
+          </p>
+      </div>
+      <br>
+      <div class="textContent">
+        <p>
+          <h2>Reflection on problem solving techniques</h2>
+          <br>
+          Pseudocode - I feel pretty confident in my ability to pseudocode, but only in my head. As I think of a piece of code and how it needs to be executed, I can hear myself thinking things like "for this thing, until reached end, do this. if this thing is 'x' then do this etc etc etc".
+          It sounds a little lacking, but it works for me! An almost alternate persona in my head that just transalates English to JS and vice versa.
+          <br><br>
+          Trying something - I do this here and there, It's more to check if a specific function is working. For example, I might comment out the code in a function and replace it with "console.log('blah blah')" to see if the function is actually being called / doing anything at all.
+          <br><br>
+          Rubber ducky method - Something I can relate to, but I do mine a little differently. Instead of focusing on an object to figure out why my code isn't working, I focus on the blank area of my mind, having an almost converstation with myself.
+          "If this isn't working, does that mean this is also not working? Why?" Is a sort of typical sentence I'd ask myself, I guess it's a more logical approach, breaking the code down into segments to understand how they affect eachother.
+          <br><br>
+          Reading Error Messages - Definitely the approach that makes the most sense. I do this one alot as it works well for me. If I can have something say to me "This isn't working because of this thing", then the issue becomes that much clearer.
+          <br><br>
+          Console.logging - Goes hand in hand with trying something, putting in console.log('text') into a function allows me to see if anything is even happening. If nothing shows up in the console, at least I know the function isn't being called properly, or just doesn't work.
+          <br><br>
+          Googling - Why not? The answer is only a few seconds and some key presses away, however this is an almost last resort for me. While you COULD look through to find the exact answer, finding a way to find the answer is even better. I will almost always find my answer by asking the google god.
+          <br><br>
+          Asking peers for help - I hate asking for help with something I feel I should know more about, must be a male thing. This would be my last resort, for two reasons:
+          <br>
+          1: If given the same resources as everyone else, the only thing changing the outcome is my own ability. I should try my best to learn what I'm meant to and apply it the work assigned the best I can, I shouldn't need to ask for help.
+          <br>
+          2: I don't like to burden other people with questions lol
+          <br><br>
+          Asking coaches for help - Something I'm confident in. Who else better to ask? They more than likely have the answer you're looking for, and are more than willing to teach it to you. No one should ever feel that they shouldn't ask for help from a coach.
+          <br><br>
+          Improving your process with relfection - I'm pretty happy with this, by reflecting on my self and my actions, I'm able to make a pretty significant change to how well I respond to things (eg stress over lack of knowledge, things like that).
+          </p>
+      </div>
+      <br>
+      <div class="textContent">
+        <p>
+          <h2> Describe these functions to a non-tech friend </h2>
+          <br>
+          .map() - Allows you to give a function to every object in an array(group of objects), return the results of that function AND keep the original contents of that array
+          <br>
+          var numbers = [1, 4, 9];
+          <br>
+          var roots = numbers.map(Math.sqrt);
+          <br>
+          roots is now [1, 2, 3], numbers is still [1, 4, 9]
+          <br><br>
+          .filter() - Will check to see if the ojects in the Array are meeting certain condititions, which can be defined in a function.
+          <br>
+          function isBigEnough(value) {
+          <br>
+          return value >= 10;
+          <br>
+          }
+          <br>
+          var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+          <br>
+          filtered is [12, 130, 44]
+          <br><br>
+          .reduce() - Takes a number of parameters from an array and returns them to a single value
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="socialMedia">
+      <a class="smLink" href="asdf"></a>
+      <a class="smLink" href="asdf"></a>
+      <a class="smLink" href="asdf"></a>
+    </div>
+    <div class="footerNav">
+      <a class="navButtonFooter link" href="../index.html"> HOME </a>
+      <a class="navButtonFooter link" href="blogIndex.html"> BLOG </a>
+      <a class="navButtonFooter link" href="../about.html"> ABOUT </a>
+      <a class="navButtonFooter link" href="../contact.html"> CONTACT </a>
+    </div>
+  </div>
+</body>
+</html>
