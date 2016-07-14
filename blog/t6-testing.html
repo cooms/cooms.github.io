@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title> 
+    CoomsBlog
+  </title>
+  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <h1> CoomsBlog </h1>
+      <p> A work in progress </p>
+    </div>
+    <div class="navigation">
+      <a class="navButton link" href="../index.html"> HOME </a>
+      <a class="navButton link" href="blogIndex.html"> BLOG </a>
+      <a class="navButton link" href="../about.html"> ABOUT </a>
+      <a class="navButton link" href="../contact.html"> CONTACT </a>
+    </div>
+  </div>
+  <div class="mainWrapper">
+    <div class="pageContent">
+      <div class="spacer"></div>
+      <h1> Technical Blog Part 7 </h1>
+      <br>
+      <div class="textContent">
+        <p>
+          <h2> Explain Javascript scope to a non-tech friend. </h2>
+          <br>
+          Scope can kind of be thought of like areas. You have a global scope (everywhere), and you have local scopes (specific to only one area). Lets think of variables as laws; you can have a global variable, which would mean that law applies to everywhere, regardless of a specific states laws. However, laws can change, just like a variable; if someone decides to change the law, it can be changed from anywhere. 
+          <br><br>
+          In Javascript, this would mean that variable applies to everywhere in the program, if it is declared globally, it is seen everywhere. If we're inside a function and we want to change that variable, we can do that too. However, we can also declare the same name variable INSIDE that function, but it will only be relevant to that function.
+          <br><br>
+          For example: If we have a global variable named NUMBER, and set it to the value of 5, the program will see that variable as 5 throughout the entire program. Then if we declare a function that sets the value of NUMBER to 6 and call that function, the value of the global variable NUMBER will become 6. However, if we declare another variable named NUMBER inside the function and give it the value of 6, then that becomes a different variable entirely as it is local to that function.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="socialMedia">
+      <a class="smLink" href="asdf"></a>
+      <a class="smLink" href="asdf"></a>
+      <a class="smLink" href="asdf"></a>
+    </div>
+    <div class="footerNav">
+      <a class="navButtonFooter link" href="../index.html"> HOME </a>
+      <a class="navButtonFooter link" href="blogIndex.html"> BLOG </a>
+      <a class="navButtonFooter link" href="../about.html"> ABOUT </a>
+      <a class="navButtonFooter link" href="../contact.html"> CONTACT </a>
+    </div>
+  </div>
+</body>
+</html>
