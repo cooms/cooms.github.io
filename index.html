@@ -1,108 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>CoomsBlog</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/coomsBlogIcon.png">
-
+	<title> Home </title>
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <header class="row center header">
-    <div class="twelve columns">
-      <h1> CoomsBlog </h1>
-    </div>
-    <div class="twelve columns center">
-      <div class="three columns u-max-full-width">
-        <h4 class="value-description hoverEffect"> <a class="noDec" href="index.html"> HOME </a></h4>
-      </div>
-      <div class="three columns">
-        <h4 class="value-description hoverEffect"><a class="noDec" href="blog/blogIndex.html"> BLOG </a>  </h4>
-      </div>
-      <div class="three columns">
-        <h4 class="value-description hoverEffect"> <a class="noDec" href="#"> ABOUT </a></h4>
-      </div>
-      <div class="three columns">
-        <h4 class="value-description hoverEffect"> <a class="noDec" href="#"> CONTACT </a> </h4>
-      </div>
-    </div>
-  </header>
-
-  <div class="container hero center first">
-      <div class="row">
-        <div class="twelve columns">
-          <h1> Welcome to my Blog! </h1>
-          <br><br>
-          <h5>
-            I'm a Web Development student currently studying at Enspiral Dev Academy in Auckland. I'm about half way done and it's all uphill from here, but I'm excited to face the challenges ahead and learn to become a proficient developer.
-          <br><br>
-          Feel free to read my blogs that I've written for each week of my course; they're all about what I've learned about about Web Development, and mindfulness exercises and concepts to help cope with the potential stresses that come with it.          </h5>
-        </div>
-      </div>
-  </div>
-  <div class="section hero center">
-    <div class="container center">
-      <h1> My Blogs </h1>
-    </div>
-    <div class="section c1 blogBG">
-        <a class="noDec" href="blog/c1-reflection-blog.html"><h2> Cultural Blog Part 1</h2></a>
-    </div>
-    <br>
-    <div class="section c2 blogBG">
-        <a class="noDec" href="blog/c2-emotional-intelligence.html"><h2> Cultural Blog Part 2</h2></a>
-    </div>
-    <br>
-    <div class="section c3 blogBG">
-        <a class="noDec" href="blog/c3-meditation-process.html"><h2> Cultural Blog Part 3</h2></a>
-    </div>
-    <br>
-    <div class="section t1 blogBG">
-        <a class="noDec" href="blog/t2-html-css-dom-p1.html"><h2> Technical Blog Part 1</h2></a>
-    </div>
-    <br>
-    <div class="section t2 blogBG">
-        <a class="noDec" href="blog/t2-html-css-dom-p2.html"><h2> Technical Blog Part 2</h2></a>
-    </div>
-    <br>
-    <div class="section t3 blogBG">
-        <a class="noDec" href="blog/t3-design-to-web-blog.html"><h2> Technical Blog Part 3</h2></a>
-    </div>
-    <br>
-    <div class="section t_t blogBG">
-        <a class="noDec" href="blog/time-and-habits.html"><h2> Time and Habits Blog</h2></a>
-    </div>
-  </div>
-  <div class="section"></div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="mainWrapper">
+		<div class="header">
+			<div class="logo"> CoomsDev </div>
+			<div class="nav">
+				<a href="index.html"> <p> HOME </p> </a>
+				<a href="about.html"> <p> ABOUT </p> </a>
+				<a href="projects.html"> <p> PROJECTS </p> </a>
+				<a href="contact.html"> <p> CONTACT </p> </a>
+			</div>
+		</div>
+		<div class="mainContent">
+			<div class="section" id="titleSection">
+				<div class="titleBox">
+					<img class="myPic" src="public/ballception.fw.png" alt="My Picture">
+					<div class="titleText">
+						<h1> Ello there </h1>
+						<p>
+							I am a Junior Web Developer looking to take his first step into the real dev world.
+							<br><br>
+							Please feel free to read about my self and also take a look at some of the projects I've completed and also currently working on. And contact me too!
+						</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="footer">
+		All rights reserved, all lefts as well. ( ͡° ͜ʖ ͡°)
+	</div>
 </body>
+<script type="text/javascript" src="public/jQuery.js"></script>
 </html>

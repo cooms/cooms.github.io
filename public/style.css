@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainWrapper {
+	width: 100%;
+	min-height: 100%;
+	margin-bottom: -25px;
+}
+
+.mainWrapper:after {
+	content: "";
+	display: block;
+}
+
+
+/*HEADER */
+
+.header {
+	width: 100%;
+	height: 63px;
+
+	color: black;
+	font-family: raleway;
+	font-weight: bold;
+
+	background-color: white;
+	margin: 0px;
+
+	position: relative;
+	z-index: 1;
+
+	box-shadow: 2px 2px 5px black;
+}
+
+.logo {
+	float: left;
+	width: auto;
+	height: auto;
+
+	font-size: 2.3em;
+	font-weight: normal;
+	line-height: 35px;
+
+	margin: 13px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.nav {
+	padding: 7px;
+
+	float: right;
+	width: 500px;
+	height: auto;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	transition: .3s;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.nav a:hover {
+	text-shadow: 2px 2px 1px #bfbfbf;
+
+	margin-left: -2px;
+}
+
+
+
+
+/*MAIN CONTENT*/
+
+.mainContent {
+	width: 100%;
+	height: auto;
+}
+
+.section {
+	width: 100%;
+	min-height: 832px;
+	background-position: top left;
+}
+
+.fadingLine { 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    width: 35%;
+    margin: 0px auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
+}
+
+#titleSection {
+	background-image: url('devBackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titleBox {
+	display: inline-block;
+	padding: 15px;
+	margin-left: 25%;
+	max-width: 899px;
+	height: 300px;
+	background-color: rgba(255,255,255,0.8);
+	
+
+	font-family: raleway;
+	color: black;
+	box-shadow: 2px 2px 10px black;
+	border-radius: 160px 160px 160px 160px;
+}
+
+.myPic {
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+
+	margin: 0 auto;
+	float: left;
+
+	padding-right: 10px;
+}
+
+.titleText h1 {
+	padding: 10px 15px 10px 10px;
+
+	font-size: 3em;
+
+	text-shadow: 1px 1px 3px grey;
+	text-align: center;
+}
+
+.titleText p {
+	padding: 10px 20px;
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+
+
+
+/*PROJECTS*/
+
+#projectSection {
+	background-image: url('devBackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projectHeader {
+	display: inline-block;
+	padding: 15px;
+	height: auto;
+	
+	font-family: raleway;
+	color: white;
+}
+
+.projectHeader h1 {
+	margin: 160px auto 30px;
+
+	text-align: center;
+	font-size: 3.5em;
+
+	font-weight: normal;
+
+	text-shadow: 2px 2px 1px black;
+}
+
+.projectHeader p {
+	margin: 30px auto;
+	text-align: center;
+	width: 40%;
+
+	font-size: 1.3em;
+
+	text-shadow: 1px 1px 1px black;
+}
+
+.harvestrWrapper {
+	background-color: white;
+	width: 100%;
+	height: auto;
+
+	font-family: raleway;
+	text-align: center;
+
+	color: rgb(80, 80, 80);
+}
+
+.harvestrWrapper h1 {
+	padding: 50px 0px 20px 0px;
+
+	font-size: 6em;
+}
+
+.harvestrWrapper p {
+	font-size: 1.3em;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+.harvestrHeader {
+	width: 40%;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.harvestrImages {
+	display: flex;
+	justify-content: space-around;
+
+	padding: 30px;
+}
+
+.harvestrImage {
+	width: 33%;
+	height: auto;
+	max-height: 450px;
+}
+
+.harvestrTextsWrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.harvestInfo {
+	text-align: left;
+	width: 40%;
+}
+
+#projectSectionMyLeague {
+	background-image: url('jhin_wallpaper.fw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/*CONTACT*/
+
+.contactBox {
+	padding: 15px;
+	height: auto;
+	
+	font-family: raleway;
+	color: white;
+}
+
+.contactBox h1 {
+	margin: 160px auto 30px;
+
+	text-align: center;
+	font-size: 3.5em;
+
+	font-weight: normal;
+
+	text-shadow: 2px 2px 1px black;
+}
+
+.contactBox p {
+	margin: 30px auto;
+	text-align: center;
+	width: 40%;
+
+	font-size: 1.7em;
+
+	text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+/*ABOUT*/
+
+
+
+/*FOOTER*/
+
+.footer {
+	position: relative;
+	height: 25px;
+	padding: 5px;
+
+
+	background-color: white;
+	color: black;
+
+	font-family: raleway;
+	font-size: .85em;
+}

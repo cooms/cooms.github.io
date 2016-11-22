@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title> Home </title>
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="mainWrapper">
+		<div class="header">
+			<div class="logo"> CoomsDev </div>
+			<div class="nav">
+				<a href="index.html"> <p> HOME </p> </a>
+				<a href="about.html"> <p> ABOUT </p> </a>
+				<a href="projects.html"> <p> PROJECTS </p> </a>
+				<a href="contact.html"> <p> CONTACT </p> </a>
+			</div>
+		</div>
+		<div class="mainContent">
+			<div class="section" id="projectSection">
+				<div class="projectHeader">
+					<h1> My projects </h1>
+					<span class="fadingLine"></span>
+					<p> Below is a short list of projects I've made with and without my fellow classmates at Enspiral Dev Academy. <br><br> Our final project was Harvestr, an app that solves a real world problem in collaboration with a non-profit organization. We are extremely proud of this application and continue to work on it to this day.
+					</p>
+					<span class="fadingLine"></span>
+				</div>
+			</div>
+			<div class="section">
+				<div class="harvestrWrapper">
+					<div class="harvestrHeader">
+						<h1> Harvestr </h1>
+						<p> Harvestr was our final project during our time at EDA, our class of 6 worked together to create an app that would help to solve a real world problem.
+						<br><br>
+						A class member had previously worked with a company called kiwiharvest, a non-profit organization commited to fetching excess produce and distributing it to those in need.
+						<br><br>
+						We wanted to create an application that would help kiwiharvest streamline their operations. We created Harvestr to allow their head communications and drivers coordinate efficiently through a ticket system.
+						<p>
+					</div>
+					<br>
+					<div class="harvestrImages">
+						<img class="harvestrImage" src="public/harvestr_on_pc.fw.png">
+						<img class="harvestrImage" src="public/harvestr_ticket_page.fw.png">
+					</div>
+					<br>
+					<div class="harvestrTextsWrapper">
+						<div class="harvestInfo">
+							<p>
+								For this project I was appointed head of design - my task was to focus on front-end rendering and the general layout of the application.
+								<br><br>
+								Harvestr is built in reactjs, which meant clear communications from all parts of the team was essential in making the application function correctly.
+								<br><br>
+								Because the app is intended to be used on a range of devices, I had to make sure it was responsive before deployment, it now functions perfectly on almost any device.
+								<br><br>
+								We utilized github to manage the project effectively - branching for each feature and merging to a 'dev' branch once a feature had been completed.
+							</p>
+						</div>
+						<div class="harvestInfo">
+							<p>
+								The application isn't designed for consumer use, so its authentication only allows admins and members of kiwiharvest to log in and actually use it.
+								<br><br>
+								Once the user has logged in, a list of tickets is displayed showing:
+								<br>
+									• The name of the respective organization
+									<br>
+									• The expected weight of the pick up or delivery
+									<br>
+									• The location (with google map implementation)
+									<br>
+									• Whether the organization is a donor or recipient (also depicted by two defining colours)
+								<br><br>
+								A driver is able to view each individual ticket to view any details, they're also able to put in an actual pick-up / drop-off weight and mark the ticket as completed (rendering it grey).
+								<br><br>
+								An operations manager is given the same privilages as the driver, but is also able to create tickets and new donors/recipients as well.
+							</p>
+						</div>
+					</div>
+					<br>
+					<div class="harvestrHeader">
+						<p> We are still working on Harvestr to this day, recieving feedback from actual use by kiwiharvest members to see what we can change and enhance.<br><br>
+						You can visit Harvestr at <a href="http://www.harvestr.nz"> www.harvestr.nz </a>
+						</p>
+					</div>
+				</div>
+				<br>
+			</div>
+<!-- 			<div class="section" id="projectSectionMyLeague">
+			</div>	 -->		
+		</div>
+		<div class="footer">
+			All rights reserved, all lefts as well. ( ͡° ͜ʖ ͡°)
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="public/jQuery.js"></script>
+</html>
