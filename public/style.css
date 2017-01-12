@@ -239,14 +239,14 @@ body {
 .harvestrImages {
 	display: flex;
 	justify-content: space-around;
+	max-height: 400px;
 
 	padding: 30px;
 }
 
 .harvestrImage {
-	width: 33%;
+	max-width: 550px;
 	height: auto;
-	max-height: 450px;
 }
 
 .harvestrTextsWrapper {
