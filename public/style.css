@@ -20,9 +20,6 @@ body {
 	display: block;
 }
 
-
-/*HEADER */
-
 .header {
 	width: 100%;
 	height: 63px;
@@ -40,6 +37,11 @@ body {
 	box-shadow: 2px 2px 5px black;
 }
 
+.menu-btn {
+	display: none;
+}
+
+
 .logo {
 	float: left;
 	width: auto;
@@ -54,7 +56,7 @@ body {
 	border-bottom: 2px solid black;
 }
 
-.nav {
+.header ul {
 	padding: 7px;
 
 	float: right;
@@ -65,7 +67,9 @@ body {
 	justify-content: space-around;
 }
 
-.nav a {
+
+
+.header a {
 	text-decoration: none;
 	color: black;
 	padding: 5px;
@@ -74,12 +78,11 @@ body {
 	border: 2px solid white;
 }
 
-.nav a:hover {
+.header a:hover {
 	text-shadow: 2px 2px 1px #bfbfbf;
 
 	margin-left: -2px;
 }
-
 
 
 
@@ -319,4 +322,155 @@ body {
 
 	font-family: raleway;
 	font-size: .85em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE HEADER*/
+
+@media (max-width: 1024px) {
+	
+	body {
+		margin-top: -26px;
+	}
+
+	.header {
+		background-color: #000;
+		box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+		position: fixed;
+		width: 100%;
+		z-index: 3;
+		height: auto;
+		/*border-bottom: 1px solid white;*/
+	}
+	
+	.header p {
+	  display: none;
+	}
+
+	.header ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  overflow: hidden;
+	  background-color: #000;
+	}
+
+	.header li {
+		min-width: 100%;
+		margin: 10px 0px 10px 0px;
+		border: none;
+	}
+
+	.header li:hover {
+		border: none;
+		box-shadow: none;
+	}
+
+	.header li a {
+		max-width: 150px;
+		height: auto;
+		padding: 5px 5px 5px 5px;
+	}
+	
+	.header .logo {
+	  display: block;
+	  float: left;
+	  padding: 15px 20px;
+	  margin-left: 15px;
+	  text-decoration: none;
+	  background-repeat: no-repeat;
+
+	  background-size: 85px 85px;
+	  width: 85px;
+	  height: 85px;
+	}
+	 
+	.header .nav_holder {
+	  clear: both;
+	  max-height: 0;
+	  transition: max-height .2s ease-out;
+	}
+
+	.header .menu-icon {
+	  cursor: pointer;
+	  display: inline-block;
+	  float: right;
+	  padding: 28px 20px;
+	  position: relative;
+	  user-select: none;
+	}
+	
+	/* Hamburger Icon */
+
+	.header .menu-icon .navicon {
+	  background: #fff;
+	  display: block;
+	  height: 3px;
+	  position: relative;
+	  transition: background .2s ease-out;
+	  width: 40px;
+
+	  margin-top: 10px;
+	  border-radius: 20px 20px 20px 20px;
+	}
+	 
+	.header .menu-icon .navicon:before,
+	.header .menu-icon .navicon:after {
+	  background: #fff;
+	  content: '';
+	  display: block;
+	  height: 100%;
+	  position: absolute;
+	  transition: all .2s ease-out;
+	  width: 100%;
+	}
+	 
+
+	/*Individual lines top and bottom*/
+
+	.header .menu-icon .navicon:before {
+	  top: 10px;
+	  border-radius: 20px 20px 20px 20px;
+	}
+	 
+	.header .menu-icon .navicon:after {
+	  top: -10px;
+	  border-radius: 20px 20px 20px 20px;
+	}
+
+	.header .menu-btn {
+	  display: none;
+	}
+	 
+	.header .menu-btn:checked ~ .nav_holder {
+	  max-height: 400px;
+	}
+	 
+	.header .menu-btn:checked ~ .menu-icon .navicon {
+	  background: transparent;
+	}
+	 
+	.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	  transform: rotate(-45deg);
+	}
+	 
+	.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	  transform: rotate(45deg);
+	}
+	 
+	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	  top: 0;
+	}
 }
