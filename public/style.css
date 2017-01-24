@@ -64,10 +64,9 @@ body {
 	height: auto;
 	margin: 20px auto;
 	display: flex;
+	list-style-type: none;
 	justify-content: space-around;
 }
-
-
 
 .header a {
 	text-decoration: none;
@@ -80,13 +79,16 @@ body {
 
 .header a:hover {
 	text-shadow: 2px 2px 1px #bfbfbf;
-
 	margin-left: -2px;
 }
 
 
 
+
 /*MAIN CONTENT*/
+
+
+
 
 .mainContent {
 	width: 100%;
@@ -345,13 +347,11 @@ body {
 	}
 
 	.header {
-		background-color: #000;
-		box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+		background-color: #fff;
 		position: fixed;
 		width: 100%;
 		z-index: 3;
 		height: auto;
-		/*border-bottom: 1px solid white;*/
 	}
 	
 	.header p {
@@ -359,17 +359,17 @@ body {
 	}
 
 	.header ul {
+	  display: block;
 	  margin: 0;
 	  padding: 0;
 	  list-style: none;
 	  overflow: hidden;
-	  background-color: #000;
+	  background-color: #fff;
 	}
 
 	.header li {
 		min-width: 100%;
-		margin: 10px 0px 10px 0px;
-		border: none;
+		margin: 20px auto;
 	}
 
 	.header li:hover {
@@ -378,22 +378,34 @@ body {
 	}
 
 	.header li a {
-		max-width: 150px;
+		width: 100%;
 		height: auto;
 		padding: 5px 5px 5px 5px;
+		border: none;
+
+		text-align: center;
+
+		font-size: 2em;
 	}
 	
-	.header .logo {
-	  display: block;
-	  float: left;
-	  padding: 15px 20px;
-	  margin-left: 15px;
-	  text-decoration: none;
-	  background-repeat: no-repeat;
+	.header {
+		display: block;
+		float: left;
+		padding: 15px 20px;
+		text-decoration: none;
+		width: 100%;
+	}
 
-	  background-size: 85px 85px;
-	  width: 85px;
-	  height: 85px;
+	.logo {
+		float: left;
+
+		font-size: 2.3em;
+		font-weight: normal;
+		line-height: 35px;
+
+		margin: 28px 0px 0px -10px;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
 	}
 	 
 	.header .nav_holder {
@@ -406,7 +418,7 @@ body {
 	  cursor: pointer;
 	  display: inline-block;
 	  float: right;
-	  padding: 28px 20px;
+	  margin: 36px 36px 0px 0px;
 	  position: relative;
 	  user-select: none;
 	}
@@ -414,7 +426,7 @@ body {
 	/* Hamburger Icon */
 
 	.header .menu-icon .navicon {
-	  background: #fff;
+	  background: #000;
 	  display: block;
 	  height: 3px;
 	  position: relative;
@@ -427,7 +439,7 @@ body {
 	 
 	.header .menu-icon .navicon:before,
 	.header .menu-icon .navicon:after {
-	  background: #fff;
+	  background: #000;
 	  content: '';
 	  display: block;
 	  height: 100%;
