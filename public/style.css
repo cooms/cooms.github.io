@@ -337,6 +337,9 @@ body {
 		width: 100%;
 		z-index: 3;
 		height: auto;
+
+		margin: 0px auto;
+		text-align: center;
 	}
 	
 	.header p {
@@ -353,7 +356,6 @@ body {
 	}
 
 	.header li {
-		min-width: 100%;
 		margin: 20px auto;
 	}
 
@@ -363,7 +365,6 @@ body {
 	}
 
 	.header li a {
-		width: 100%;
 		height: auto;
 		padding: 5px 5px 5px 5px;
 		border: none;
@@ -473,7 +474,9 @@ body {
 
 	.titleBox {
 		padding: 15px;
-		margin: 0px auto 0px auto;
+		margin: 0px auto;
+
+		text-align: center;
 	}
 
 	.myPic {
