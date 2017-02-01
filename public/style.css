@@ -5,8 +5,6 @@
 body {
 	margin: 0;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 .mainWrapper {
@@ -40,7 +38,6 @@ body {
 .menu-btn {
 	display: none;
 }
-
 
 .logo {
 	float: left;
@@ -119,21 +116,18 @@ body {
 }
 
 .titleBox {
-	display: inline-block;
 	padding: 15px;
-	margin-left: 25%;
-	max-width: 950px;
-	height: 300px;
-	
+	margin: 0px auto 0px 20%;
+	width: 50%;
 
 	font-family: raleway;
 	color: black;
-	border-radius: 160px 160px 160px 160px;
+	position: absolute;
 }
 
 .myPic {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	border-radius: 300px;
 
 	margin: 0 auto;
@@ -147,10 +141,10 @@ body {
 	height: 300px;
 
 	margin: 0px 20px 0px 307px;
-	padding-right: ;
 	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#fff), to(rgba(0,0,0,0)));
 	position: absolute;
 }
+
 
 .titleText h1 {
 	padding: 10px 15px 10px 10px;
@@ -329,15 +323,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /*RESPONSIVE HEADER*/
 
 @media (max-width: 1024px) {
@@ -352,6 +337,9 @@ body {
 		width: 100%;
 		z-index: 3;
 		height: auto;
+
+		margin: 0px auto;
+		text-align: center;
 	}
 	
 	.header p {
@@ -368,7 +356,6 @@ body {
 	}
 
 	.header li {
-		min-width: 100%;
 		margin: 20px auto;
 	}
 
@@ -378,7 +365,6 @@ body {
 	}
 
 	.header li a {
-		width: 100%;
 		height: auto;
 		padding: 5px 5px 5px 5px;
 		border: none;
@@ -484,5 +470,28 @@ body {
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	  top: 0;
+	}
+
+	.titleBox {
+		padding: 15px;
+		margin: 0px auto;
+
+		text-align: center;
+	}
+
+	.myPic {
+		width: 200px;
+		height: auto;
+		border-radius: 300px;
+
+		margin: 0 auto;
+
+		padding-right: 10px;
+	}
+
+	.vertLine {
+		display: none;
+		padding: none;
+		margin: none;
 	}
 }
