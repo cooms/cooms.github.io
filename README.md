@@ -5,9 +5,9 @@ As of now, I still have a few things that need to be completed.
 
 In no particular order:
 1. Fully responsive
-* Header needs to be adjusted
-* Some wrappers widths need to be adjusted.
-* Text must be adjusted according to media queries
+..* Header needs to be adjusted
+..* Some wrappers widths need to be adjusted.
+..* Text must be adjusted according to media queries
 
 2. All projects completed
 * Harvestr needs to adjusted with some other text and images need to be re-styled.
