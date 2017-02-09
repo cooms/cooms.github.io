@@ -109,6 +109,17 @@ body {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
 }
 
+.fadingLineMain { 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    width: 100%;
+    margin: 0px auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
+}
+
 #titleSection {
 	background-image: url('devBackground.png');
     background-repeat: no-repeat;
@@ -116,38 +127,16 @@ body {
 }
 
 .titleBox {
-	padding: 15px;
-	margin: 0px auto 0px 20%;
-	width: 50%;
+	margin: 0px auto;
+	width: 100%;
 
+	text-align: center;
 	font-family: raleway;
 	color: black;
-	position: absolute;
 }
-
-.myPic {
-	width: 300px;
-	height: auto;
-	border-radius: 300px;
-
-	margin: 0 auto;
-	float: left;
-
-	padding-right: 10px;
-}
-
-.vertLine {
-	width: 1px;
-	height: 300px;
-
-	margin: 0px 20px 0px 307px;
-	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#fff), to(rgba(0,0,0,0)));
-	position: absolute;
-}
-
 
 .titleText h1 {
-	padding: 10px 15px 10px 10px;
+	padding: 0px 15px 10px 10px;
 
 	font-size: 3em;
 	text-shadow: 1px 1px 3px black;
@@ -156,7 +145,7 @@ body {
 }
 
 .titleText p {
-	padding: 10px 20px 0px 30px;
+	padding: 0px 20px 0px 30px;
 
     font-size: 1.2em;
     text-shadow: 1px 1px 3px black;
@@ -334,7 +323,6 @@ body {
 	.header {
 		background-color: #fff;
 		position: fixed;
-		width: 100%;
 		z-index: 3;
 		height: auto;
 
@@ -379,7 +367,8 @@ body {
 		float: left;
 		padding: 15px 20px;
 		text-decoration: none;
-		width: 100%;
+/*		width: 100%;*/
+		margin: -28px 0px 0px 0px;
 	}
 
 	.logo {
@@ -472,26 +461,15 @@ body {
 	  top: 0;
 	}
 
-	.titleBox {
-		padding: 15px;
-		margin: 0px auto;
-
-		text-align: center;
+	.titleBox p {
+		width: 80%;
 	}
 
-	.myPic {
-		width: 200px;
-		height: auto;
-		border-radius: 300px;
-
-		margin: 0 auto;
-
-		padding-right: 10px;
+	#projectHeader p {
+		width: 80%;
 	}
 
-	.vertLine {
+	.fadingLine, .fadingLineMain {
 		display: none;
-		padding: none;
-		margin: none;
 	}
 }
