@@ -20,11 +20,10 @@ body {
 
 .header {
 	width: 100%;
-	height: 63px;
+	height: 58px;
 
 	color: black;
 	font-family: raleway;
-	font-weight: bold;
 
 	background-color: white;
 	margin: 0px;
@@ -32,7 +31,7 @@ body {
 	position: relative;
 	z-index: 1;
 
-	box-shadow: 2px 2px 5px black;
+	box-shadow: 2px 2px 5px #000;
 }
 
 .menu-btn {
@@ -45,21 +44,22 @@ body {
 	height: auto;
 
 	font-size: 2.3em;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: 35px;
 
-	margin: 13px;
+	margin: 11px 13px;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 }
 
 .header ul {
 	padding: 7px;
+	font-weight: 400;
 
 	float: right;
 	width: 500px;
 	height: auto;
-	margin: 20px auto;
+	margin: 16px auto;
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
@@ -82,10 +82,7 @@ body {
 
 
 
-/*MAIN CONTENT*/
-
-
-
+/*MAIN CONTENT ---------------------------------------------------------------*/
 
 .mainContent {
 	width: 100%;
@@ -98,7 +95,7 @@ body {
 	background-position: top left;
 }
 
-.fadingLine { 
+.fadingLine {
     display:block;
     border:none;
     color:white;
@@ -109,7 +106,7 @@ body {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
 }
 
-.fadingLineMain { 
+.fadingLineMain {
     display:block;
     border:none;
     color:white;
@@ -121,43 +118,68 @@ body {
 }
 
 #titleSection {
-	background-image: url('devBackground.png');
-    background-repeat: no-repeat;
-    background-position: center;
+	background-image: url('laptopWorkdesk.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.titleBox {
-	margin: 0px auto;
-	width: 100%;
+.indexBox {
+	margin: 3% 0% 0% 5%;
+	width: 30%;
+	position: absolute;
 
-	text-align: center;
 	font-family: raleway;
-	color: black;
 }
 
-.titleText h1 {
-	padding: 0px 15px 10px 10px;
+.indexBoxText h1 {
+	padding: 0px 15px 0px 0px;
+	margin-bottom: 10px;
 
+	font-weight: 400;
 	font-size: 3em;
-	text-shadow: 1px 1px 3px black;
+	color: #555;
+}
+
+.indexBoxText p {
+	padding: 15px 15px 10px 0px;
+
+	color: #666;
+  font-size: 1.2em;
+}
+
+.indexNav {
+	margin: 350px 0% 0% 3%;
+	width: 30%;
+	position: absolute;
+
+	font-family: raleway;
+}
+
+.indexNav ul {
+	font-size: 1.5em;
+	list-style: none;
+}
+
+.indexNav li {
+	margin: 20px 0px 20px 0px;
+	padding: 10px 10px 10px 10px;
+	background-color: rgba(255,255,255,.9);
+	box-shadow: 3px 3px 5px rgba(0,0,0,.6);
+	transition: .3s;
 	text-align: center;
-	color: white;
 }
 
-.titleText p {
-	padding: 0px 20px 0px 30px;
-
-    font-size: 1.2em;
-    text-shadow: 1px 1px 3px black;
-    text-align: center;
-    color: white;
+.indexNav li:hover {
+	background-color: #fff;
+	transition: .3s;
 }
 
+.indexNav a {
+	text-decoration: none;
+	color: #555;
+}
 
-
-
-
-/*PROJECTS*/
+/*PROJECTS -------------------------------------------------------------------*/
 
 #projectSection {
 	background-image: url('devBackground.png');
@@ -169,7 +191,7 @@ body {
 	display: inline-block;
 	padding: 15px;
 	height: auto;
-	
+
 	font-family: raleway;
 	color: white;
 }
@@ -261,7 +283,7 @@ body {
 .contactBox {
 	padding: 15px;
 	height: auto;
-	
+
 	font-family: raleway;
 	color: white;
 }
@@ -315,7 +337,7 @@ body {
 /*RESPONSIVE HEADER*/
 
 @media (max-width: 1024px) {
-	
+
 	body {
 		margin-top: -26px;
 	}
@@ -329,7 +351,7 @@ body {
 		margin: 0px auto;
 		text-align: center;
 	}
-	
+
 	.header p {
 	  display: none;
 	}
@@ -361,7 +383,7 @@ body {
 
 		font-size: 2em;
 	}
-	
+
 	.header {
 		display: block;
 		float: left;
@@ -382,7 +404,7 @@ body {
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
 	}
-	 
+
 	.header .nav_holder {
 	  clear: both;
 	  max-height: 0;
@@ -397,7 +419,7 @@ body {
 	  position: relative;
 	  user-select: none;
 	}
-	
+
 	/* Hamburger Icon */
 
 	.header .menu-icon .navicon {
@@ -411,7 +433,7 @@ body {
 	  margin-top: 10px;
 	  border-radius: 20px 20px 20px 20px;
 	}
-	 
+
 	.header .menu-icon .navicon:before,
 	.header .menu-icon .navicon:after {
 	  background: #000;
@@ -422,7 +444,7 @@ body {
 	  transition: all .2s ease-out;
 	  width: 100%;
 	}
-	 
+
 
 	/*Individual lines top and bottom*/
 
@@ -430,7 +452,7 @@ body {
 	  top: 10px;
 	  border-radius: 20px 20px 20px 20px;
 	}
-	 
+
 	.header .menu-icon .navicon:after {
 	  top: -10px;
 	  border-radius: 20px 20px 20px 20px;
@@ -439,23 +461,23 @@ body {
 	.header .menu-btn {
 	  display: none;
 	}
-	 
+
 	.header .menu-btn:checked ~ .nav_holder {
 	  max-height: 400px;
 	}
-	 
+
 	.header .menu-btn:checked ~ .menu-icon .navicon {
 	  background: transparent;
 	}
-	 
+
 	.header .menu-btn:checked ~ .menu-icon .navicon:before {
 	  transform: rotate(-45deg);
 	}
-	 
+
 	.header .menu-btn:checked ~ .menu-icon .navicon:after {
 	  transform: rotate(45deg);
 	}
-	 
+
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	  top: 0;
