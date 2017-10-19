@@ -31,7 +31,7 @@ body {
 	position: relative;
 	z-index: 1;
 
-	box-shadow: 2px 2px 5px #000;
+	box-shadow: 0px 2px 3px #777;
 }
 
 .menu-btn {
@@ -78,9 +78,6 @@ body {
 	text-shadow: 2px 2px 1px #bfbfbf;
 	margin-left: -2px;
 }
-
-
-
 
 /*MAIN CONTENT ---------------------------------------------------------------*/
 
@@ -156,22 +153,23 @@ body {
 }
 
 .indexNav ul {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	list-style: none;
 }
 
 .indexNav li {
 	margin: 20px 0px 20px 0px;
 	padding: 10px 10px 10px 10px;
-	background-color: rgba(255,255,255,.9);
-	box-shadow: 3px 3px 5px rgba(0,0,0,.6);
-	transition: .3s;
+	background-color: rgba(255,255,255,.8);
+	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
 	text-align: center;
+	transition: .5s;
 }
 
 .indexNav li:hover {
+	margin-right: -2%;
 	background-color: #fff;
-	transition: .3s;
+	transition: .5s;
 }
 
 .indexNav a {
@@ -182,7 +180,7 @@ body {
 /*PROJECTS -------------------------------------------------------------------*/
 
 #projectSection {
-	background-image: url('devBackground.png');
+	background-image: url('projectBackground.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -334,7 +332,7 @@ body {
 
 
 
-/*RESPONSIVE HEADER*/
+/*RESPONSIVE HEADER ----------------------------------------------------------*/
 
 @media (max-width: 1024px) {
 
@@ -493,5 +491,14 @@ body {
 
 	.fadingLine, .fadingLineMain {
 		display: none;
+	}
+}
+
+/*Media Queries --------------------------------------------------------------*/
+
+@media (max-width: 1620px) {
+	.indexBox {
+		background-color: rgba(255,255,255,.8);
+		padding: 20px;
 	}
 }
