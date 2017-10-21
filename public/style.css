@@ -312,6 +312,7 @@ body {
 /*ABOUT ----------------------------------------------------------------------*/
 
 #aboutSection {
+	height: 1000px;
 }
 
 .aboutBox {
@@ -336,7 +337,18 @@ body {
 	font-size: 1.2em;
 }
 
+.bioPicWrapper {
+	width: 45%;
+	float: right;
+	margin: 7% -20% 0% 0%;
+}
 
+.bioPic {
+	width: 45%;
+	height: auto;
+	margin: 0px 35px 40px 0px;
+	box-shadow: 2px 2px 5px #555;
+}
 
 
 
