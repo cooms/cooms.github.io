@@ -299,18 +299,49 @@ body {
 
 .contactBox p {
 	margin: 30px auto;
-	text-align: center;
 	width: 40%;
 
+	text-align: center;
 	font-size: 1.7em;
-
 	text-shadow: 1px 1px 1px black;
 }
 
 
 
 
-/*ABOUT*/
+/*ABOUT ----------------------------------------------------------------------*/
+
+#aboutSection {
+}
+
+.aboutBox {
+	width: 30%;
+	margin: 6% 0% 0% 11%;
+	position: absolute;
+
+	color: #666;
+	font-family: raleway;
+}
+
+.aboutBox h1 {
+	padding: 15px 0px;
+
+	font-weight: 400;
+	font-size: 2.5em;
+}
+
+.aboutBox p {
+	padding: 15px 0px;
+
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
 
 
 
