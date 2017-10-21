@@ -145,7 +145,7 @@ body {
 }
 
 .indexNav {
-	margin: 350px 0% 0% 3%;
+	margin: 400px 0% 0% 3%;
 	width: 30%;
 	position: absolute;
 
@@ -175,6 +175,47 @@ body {
 .indexNav a {
 	text-decoration: none;
 	color: #555;
+}
+
+/*ABOUT ----------------------------------------------------------------------*/
+
+#aboutSection {
+	height: 1000px;
+}
+
+.aboutBox {
+	width: 30%;
+	margin: 6% 0% 0% 11%;
+	position: absolute;
+
+	color: #666;
+	font-family: raleway;
+}
+
+.aboutBox h1 {
+	padding: 15px 0px;
+
+	font-weight: 400;
+	font-size: 2.5em;
+}
+
+.aboutBox p {
+	padding: 15px 0px;
+
+	font-size: 1.2em;
+}
+
+.bioPicWrapper {
+	width: 45%;
+	float: right;
+	margin: 7% -24% 0% 0%;
+}
+
+.bioPic {
+	width: 40%;
+	height: auto;
+	margin: 0px 55px 55px 0px;
+
 }
 
 /*PROJECTS -------------------------------------------------------------------*/
@@ -273,10 +314,7 @@ body {
     background-position: center;
 }
 
-
-
-
-/*CONTACT*/
+/*CONTACT --------------------------------------------------------------------*/
 
 .contactBox {
 	padding: 15px;
@@ -307,57 +345,7 @@ body {
 }
 
 
-
-
-/*ABOUT ----------------------------------------------------------------------*/
-
-#aboutSection {
-	height: 1000px;
-}
-
-.aboutBox {
-	width: 30%;
-	margin: 6% 0% 0% 11%;
-	position: absolute;
-
-	color: #666;
-	font-family: raleway;
-}
-
-.aboutBox h1 {
-	padding: 15px 0px;
-
-	font-weight: 400;
-	font-size: 2.5em;
-}
-
-.aboutBox p {
-	padding: 15px 0px;
-
-	font-size: 1.2em;
-}
-
-.bioPicWrapper {
-	width: 45%;
-	float: right;
-	margin: 7% -20% 0% 0%;
-}
-
-.bioPic {
-	width: 45%;
-	height: auto;
-	margin: 0px 35px 40px 0px;
-	box-shadow: 2px 2px 5px #555;
-}
-
-
-
-
-
-
-
-
-/*FOOTER*/
+/*FOOTER ---------------------------------------------------------------------*/
 
 .footer {
 	position: relative;
@@ -371,9 +359,6 @@ body {
 	font-family: raleway;
 	font-size: .85em;
 }
-
-
-
 
 /*RESPONSIVE HEADER ----------------------------------------------------------*/
 
