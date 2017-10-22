@@ -39,17 +39,9 @@ body {
 }
 
 .logo {
-	float: left;
-	width: auto;
-	height: auto;
-
-	font-size: 2.3em;
-	font-weight: 400;
-	line-height: 35px;
-
-	margin: 11px 13px;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	width: 180px;
+	height: 40px;
+	margin: 10px 10px;
 }
 
 .header ul {
@@ -90,28 +82,6 @@ body {
 	width: 100%;
 	min-height: 832px;
 	background-position: top left;
-}
-
-.fadingLine {
-    display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:black;
-    width: 35%;
-    margin: 0px auto;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
-}
-
-.fadingLineMain {
-    display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:black;
-    width: 100%;
-    margin: 0px auto;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
 }
 
 #titleSection {
@@ -166,6 +136,10 @@ body {
 	transition: .5s;
 }
 
+.indexHR, .indexParagraph {
+	display: none;
+}
+
 .indexNav li:hover {
 	margin-right: -2%;
 	background-color: #fff;
@@ -180,7 +154,7 @@ body {
 /*ABOUT ----------------------------------------------------------------------*/
 
 #aboutSection {
-	height: 1000px;
+	height: 1200px;
 }
 
 .aboutBox {
@@ -201,6 +175,7 @@ body {
 
 .aboutBox p {
 	padding: 15px 0px;
+	margin-bottom: 75px;
 
 	font-size: 1.2em;
 }
@@ -529,4 +504,49 @@ body {
 		background-color: rgba(255,255,255,.8);
 		padding: 20px;
 	}
+	.indexNav {
+		width: 50%;
+		position: static;
+		float: right;
+		margin:	1.5% -430px 0% 0%;
+	}
+	.indexNav li {
+		padding: 10px 15px;
+		text-align: left;
+		font-size: 1.4em;
+	}
+	.indexParagraph {
+		padding: 5px 0px;
+		display: block;
+		font-size: .7em;
+	}
+	.indexHR {
+		color: #ddd;
+		display: block;
+		margin: 10px 0px 10px;
+	}
+}
+
+/*Miscellaneous CSS ----------------------------------------------------------*/
+
+.fadingLine {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    width: 35%;
+    margin: 0px auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
+}
+
+.fadingLineMain {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    width: 100%;
+    margin: 0px auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(rgba(0,0,0,0)));
 }
