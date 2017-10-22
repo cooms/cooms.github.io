@@ -133,28 +133,33 @@ body {
 	background-color: rgba(255,255,255,.8);
 	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
 	text-align: center;
+	color: #555;
 	transition: .5s;
 }
 
-.indexHR, .indexParagraph {
+.indexHR, .indexParagraph, .indexProject, .contactParagraph {
 	display: none;
 }
 
+.iconSmall {
+	margin: 15px 5px -4px 0px;
+	max-width: 25px;
+	height: auto;
+}
+
 .indexNav li:hover {
-	margin-right: -2%;
 	background-color: #fff;
 	transition: .5s;
 }
 
 .indexNav a {
 	text-decoration: none;
-	color: #555;
 }
 
 /*ABOUT ----------------------------------------------------------------------*/
 
 #aboutSection {
-	height: 1200px;
+	height: 1300px;
 }
 
 .aboutBox {
@@ -168,7 +173,7 @@ body {
 
 .aboutBox h1 {
 	padding: 15px 0px;
-
+	margin: 0px;
 	font-weight: 400;
 	font-size: 2.5em;
 }
@@ -395,15 +400,7 @@ body {
 	}
 
 	.logo {
-		float: left;
-
-		font-size: 2.3em;
-		font-weight: normal;
-		line-height: 35px;
-
 		margin: 28px 0px 0px -10px;
-		border-top: 2px solid black;
-		border-bottom: 2px solid black;
 	}
 
 	.header .nav_holder {
@@ -501,7 +498,7 @@ body {
 
 @media (max-width: 1620px) {
 	.indexBox {
-		background-color: rgba(255,255,255,.8);
+		background-color: #fff;
 		padding: 20px;
 	}
 	.indexNav {
@@ -511,6 +508,8 @@ body {
 		margin:	1.5% -430px 0% 0%;
 	}
 	.indexNav li {
+		margin-bottom: 50px;
+		background-color: #fff;
 		padding: 10px 15px;
 		text-align: left;
 		font-size: 1.4em;
@@ -524,6 +523,20 @@ body {
 		color: #ddd;
 		display: block;
 		margin: 10px 0px 10px;
+	}
+	.indexProjects {
+		padding: 10px 0px 10px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.indexProject {
+		display: inherit;
+		width: 27%;
+		height: auto;
+		align-self: center
+	}
+	.contactParagraph {
+		display: block;
 	}
 }
 
