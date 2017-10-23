@@ -583,6 +583,7 @@ body {
 	#titleSection {
 		background-position: left;
 		background-attachment: fixed;
+		background-repeat: repeat-y;
 		height: 2600px;
 	}
 	.indexProjects {
