@@ -548,7 +548,7 @@ body {
 	#titleSection {
 		background-position: left;
 		background-attachment: fixed;
-		height: 1500px;
+		height: auto;
 	}
 	.indexBox, .indexNav {
 		width: 80%;
