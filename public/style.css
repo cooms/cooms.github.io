@@ -497,6 +497,9 @@ body {
 /*Media Queries --------------------------------------------------------------*/
 
 @media (max-width: 1620px) {
+	#titleSection {
+		background-image: url("background.jpg");
+	}
 	.indexBox {
 		background-color: #fff;
 		padding: 20px;
@@ -508,6 +511,7 @@ body {
 		margin:	1.5% -430px 0% 0%;
 	}
 	.indexNav li {
+		box-shadow: none;
 		margin-bottom: 50px;
 		background-color: #fff;
 		padding: 10px 15px;
@@ -537,6 +541,63 @@ body {
 	}
 	.contactParagraph {
 		display: block;
+	}
+}
+
+@media (max-width: 1024px)  {
+	#titleSection {
+		background-position: left;
+		background-attachment: fixed;
+		height: 1500px;
+	}
+	.indexBox, .indexNav {
+		width: 80%;
+		margin: 100px 12% 0px 7%;
+		background: none;
+		color: #eee;
+	}
+	.indexBox h1, .indexBox p {
+		color: #eee;
+	}
+	.indexNav {
+		margin-top: 500px;
+	}
+	.indexNav ul {
+		padding: 0px;
+	}
+	.indexNav li {
+		margin: 100px auto;
+		background: none;
+		color: #eee;
+	}
+	.footer {
+		display: none;
+	}
+	.indexNav li:hover {
+		background: none;
+		box-shadow: none;
+	}
+}
+
+@media (max-width: 720px) {
+	#titleSection {
+		height: 2600px;
+	}
+	.indexProjects {
+		display: block;
+	}
+	.indexProject {
+		width: 80%;
+		display: block;
+		margin: 20px auto 80px;
+	}
+	.contactParagraph {
+		width: 100%;
+		font-size: .8em;
+		line-height: 30px;
+	}
+	.contactParagraph img {
+		display: none;
 	}
 }
 
