@@ -581,6 +581,8 @@ body {
 
 @media (max-width: 720px) {
 	#titleSection {
+		background-position: left;
+		background-attachment: fixed;
 		height: 2600px;
 	}
 	.indexProjects {
