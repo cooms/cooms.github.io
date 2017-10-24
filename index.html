@@ -8,6 +8,14 @@
 	<meta name="viewport" content='width=device-width,initial-scale=1,maximum-scale=1'>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			if ($(window).width() <= 1020) {
+				$("#phoneIcon").attr("src","public/phoneIcon2.fw.png");
+				$("#emailIcon").attr("src","public/emailIcon2.fw.png");
+			}
+		})
+	</script>
 </head>
 <body>
 	<div class="mainWrapper">
@@ -67,9 +75,9 @@
 								Contact Me
 								<hr class="indexHR"/>
 								<p class="contactParagraph">
-									<img class="iconSmall" src="public/phoneIcon.png"/> 0210 22 33 646
+									<img class="iconSmall" id="phoneIcon"src="public/phoneIcon.png"/> 0210 22 33 646
 									<br/>
-									<img class="iconSmall" src="public/emailIcon.png"/> thcoomer@hotmail.com
+									<img class="iconSmall" id="emailIcon"src="public/emailIcon.png"/> thcoomer@hotmail.com
 								</p>
 							</li>
 						</a>
