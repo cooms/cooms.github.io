@@ -188,7 +188,7 @@ body {
 .bioPicWrapper {
 	width: 45%;
 	float: right;
-	margin: 7% -24% 0% 0%;
+	margin: 7% -500px 0% 0%;
 }
 
 .bioPic {
@@ -537,12 +537,36 @@ body {
 		display: inherit;
 		width: 27%;
 		height: auto;
-		align-self: center
+		align-self: center;
 	}
 	.contactParagraph {
 		display: block;
 	}
+
+	/*About Page*/
+	.bioPicWrapper {
+		margin: 7% -500px;
+		width: 50%;
+	}
+	.bioPic {
+		width: 42%;
+	}
 }
+
+@media (max-width: 1447px) {
+	#aboutSection {
+		height: 2200px;
+	}
+	.aboutBox {
+		width: 45%;
+	}
+	.bioPic {
+		margin: 0 200px 50px;
+		width: 60%;
+		display: block;
+	}
+}
+
 
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
@@ -579,6 +603,20 @@ body {
 		background: none;
 		box-shadow: none;
 	}
+
+	/*About Page*/
+	.aboutBox {
+		margin-top: 15%;
+		width: 45%;
+	}
+	.bioPicWrapper {
+		margin: 15% 10%;
+	}
+	.bioPic {
+		margin: 0 200px 50px;
+		width: 60%;
+		display: block;
+	}
 }
 
 
@@ -608,6 +646,28 @@ body {
 	}
 	.contactParagraph img {
 		display: none;
+	}
+
+	/*About Page*/
+	#aboutSection {
+		height: 1000px;
+	}
+	.aboutBox {
+		width: 80%;
+		margin-top: 40%;
+	}
+	.bioPicWrapper {
+		position: static;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin: 70px auto;
+	}
+	.bioPic {
+		align-self: center;
+		margin: 0px auto;
+		width: 25%;
+		display: block;
 	}
 }
 
