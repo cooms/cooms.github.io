@@ -306,20 +306,19 @@ body {
 	padding: 30px;
 	width: 30%;
 	height: auto;
-	background-color: #fff;
-	box-shadow: 2px 2px 5px #666;
 	font-family: raleway;
 	color: #666;
+	text-align: center;
 }
 
 .contactBox h1 {
-	font-size: 3.5em;
+	font-size: 4em;
 	font-weight: normal;
 }
 
 .contactBox p {
 	margin: 30px auto;
-	font-size: 1.7em;
+	font-size: 2em;
 }
 
 
@@ -676,7 +675,7 @@ body {
 		background: none;
 		box-shadow: none;
 		color: #fff;
-		text-shadow: 1px 1px 3px #999;
+		text-shadow: 1px 1px 3px #666;
 	}
 }
 
