@@ -296,32 +296,30 @@ body {
 
 /*CONTACT --------------------------------------------------------------------*/
 
-.contactBox {
-	padding: 15px;
-	height: auto;
+#contactSection {
+	background-image: url("projectBackground.jpg");
+}
 
+.contactBox {
+	position: absolute;
+	margin: 150px 35%;
+	padding: 30px;
+	width: 30%;
+	height: auto;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px #666;
 	font-family: raleway;
-	color: white;
+	color: #666;
 }
 
 .contactBox h1 {
-	margin: 160px auto 30px;
-
-	text-align: center;
 	font-size: 3.5em;
-
 	font-weight: normal;
-
-	text-shadow: 2px 2px 1px black;
 }
 
 .contactBox p {
 	margin: 30px auto;
-	width: 40%;
-
-	text-align: center;
 	font-size: 1.7em;
-	text-shadow: 1px 1px 1px black;
 }
 
 
@@ -343,16 +341,11 @@ body {
 /*RESPONSIVE HEADER ----------------------------------------------------------*/
 
 @media (max-width: 1024px) {
-	body {
-		margin-top: -26px;
-	}
-
 	.header {
 		background-color: #fff;
 		position: fixed;
 		z-index: 3;
 		height: auto;
-
 		margin: 0px auto;
 		text-align: center;
 	}
@@ -617,6 +610,12 @@ body {
 		width: 60%;
 		display: block;
 	}
+
+	/*Contact Page*/
+	.contactBox {
+		width: 50%;
+		margin-left: 21%;
+	}
 }
 
 
@@ -669,11 +668,36 @@ body {
 		width: 25%;
 		display: block;
 	}
+
+	/*Contact Page*/
+	.contactBox {
+		margin-left: 8%;
+		width: 75%;
+		background: none;
+		box-shadow: none;
+		color: #fff;
+		text-shadow: 1px 1px 3px #999;
+	}
 }
 
 @media (max-width: 550px) {
 	.aboutBox {
 		margin-top: 50%;
+	}
+}
+
+@media (max-width: 540px) {
+	.contactBox {
+		width: 85%;
+		margin-left: 2%;
+		margin-right: 0px;
+		padding: 0px 0px 0px 15px;
+	}
+	.contactBox h1 {
+		font-size: 2.5em;
+	}
+	.contactBox p {
+		font-size: 1.5em;
 	}
 }
 
