@@ -671,6 +671,12 @@ body {
 	}
 }
 
+@media (max-width: 550px) {
+	.aboutBox {
+		margin-top: 50%;
+	}
+}
+
 /*Miscellaneous CSS ----------------------------------------------------------*/
 
 .fadingLine {
