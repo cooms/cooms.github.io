@@ -202,54 +202,57 @@ body {
 
 #projectSection {
 	background-image: url('projectBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .projectHeader {
-	display: inline-block;
-	padding: 15px;
+	position: absolute;
+	margin: 0 0%;
+	width: 100%;
 	height: auto;
-
+	text-align: center;
 	font-family: raleway;
-	color: white;
+	color: #666;
 }
 
 .projectHeader h1 {
-	margin: 160px auto 30px;
-
-	text-align: center;
+	margin: 100px auto 30px;
 	font-size: 3.5em;
-
 	font-weight: normal;
-
-	text-shadow: 2px 2px 1px black;
 }
 
 .projectHeader p {
 	margin: 30px auto;
-	text-align: center;
 	width: 40%;
-
 	font-size: 1.3em;
+}
 
-	text-shadow: 1px 1px 1px black;
+.projectImgWrapper {
+	position: absolute;
+	width: 80%;
+	margin: 500px 10%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.projectImg {
+	align-self: center;
+	width: 17%;
+	height: auto;
 }
 
 .harvestrWrapper {
 	background-color: white;
 	width: 100%;
 	height: auto;
-
 	font-family: raleway;
 	text-align: center;
-
 	color: rgb(80, 80, 80);
 }
 
 .harvestrWrapper h1 {
 	padding: 50px 0px 20px 0px;
-
 	font-size: 6em;
 }
 
@@ -306,9 +309,10 @@ body {
 	padding: 30px;
 	width: 30%;
 	height: auto;
+	text-align: center;
 	font-family: raleway;
 	color: #666;
-	text-align: center;
+	text-shadow: 2px 2px 2px #ddd;
 }
 
 .contactBox h1 {
