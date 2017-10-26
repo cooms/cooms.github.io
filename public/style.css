@@ -614,6 +614,20 @@ body {
 		display: block;
 	}
 
+	/*Project Page*/
+	.projectImgWrapper {
+		display: block;
+		width: 80%;
+		margin: 380px 23%;
+	}
+	.projectImg {
+		width: 30%;
+		margin: 0px 60px 40px 0px;
+	}
+	.projectImg:last-of-type {
+		display: none;
+	}
+
 	/*Contact Page*/
 	.contactBox {
 		width: 50%;
@@ -623,6 +637,12 @@ body {
 
 
 /*Phone Size -----------------------------*/
+@media (max-width: 860px) {
+	.projectImgWrapper {
+		margin: 450px 23%;
+	}
+}
+
 @media (max-width: 720px) {
 	#titleSection {
 		background-position: left;
@@ -672,6 +692,12 @@ body {
 		display: block;
 	}
 
+	/*Project Page*/
+	.projectImgWrapper {
+		width: 100%;
+		margin: 450px 15%;
+	}
+
 	/*Contact Page*/
 	.contactBox {
 		margin-left: 8%;
@@ -690,6 +716,15 @@ body {
 }
 
 @media (max-width: 540px) {
+	/*Project Page*/
+	.projectHeader {
+		margin-top: 150px;
+	}
+	.projectImgWrapper {
+		display: none;
+	}
+
+	/*Contact Page*/
 	.contactBox {
 		width: 85%;
 		margin-left: 2%;
