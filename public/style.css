@@ -242,59 +242,39 @@ body {
 	height: auto;
 }
 
-.harvestrWrapper {
-	background-color: white;
-	width: 100%;
-	height: auto;
+.projectWrapper {
+	width: 80%;
+	margin: 0 auto;
 	font-family: raleway;
+}
+
+.projectWrapper h1 {
+	font-size: 3em;
+	padding: 50px;
 	text-align: center;
-	color: rgb(80, 80, 80);
+	color: #666;
 }
 
-.harvestrWrapper h1 {
-	padding: 50px 0px 20px 0px;
-	font-size: 6em;
+.projectWrapper img {
+	width: 45%;
 }
 
-.harvestrWrapper p {
+.projectWrapper p {
+	padding: 0px 0px 50px 0px;
+	width: 45%;
+	float: right;
 	font-size: 1.3em;
-	margin: 0px auto;
-	padding: 20px;
+	color: #666;
 }
 
-.harvestrHeader {
-	width: 40%;
-	text-align: center;
-	margin: 0px auto;
+.projectWrapper a {
+	font-weight: 600;
+	color: #666;
+	text-decoration: none;
 }
 
-.harvestrImages {
-	display: flex;
-	justify-content: space-around;
-	max-height: 400px;
-
-	padding: 30px;
-}
-
-.harvestrImage {
-	max-width: 550px;
-	height: auto;
-}
-
-.harvestrTextsWrapper {
-	display: flex;
-	justify-content: space-around;
-}
-
-.harvestInfo {
-	text-align: left;
-	width: 40%;
-}
-
-#projectSectionMyLeague {
-	background-image: url('jhin_wallpaper.fw.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.projectWrapper a:hover {
+	text-decoration: underline;
 }
 
 /*CONTACT --------------------------------------------------------------------*/
@@ -618,14 +598,44 @@ body {
 	.projectImgWrapper {
 		display: block;
 		width: 80%;
-		margin: 380px 23%;
+		margin: 380px 0% 0px 13%;
+		overflow: hidden;
 	}
 	.projectImg {
 		width: 30%;
-		margin: 0px 60px 40px 0px;
+		margin: 0px -0px 40px 80px;
 	}
 	.projectImg:last-of-type {
 		display: none;
+	}
+
+	.projectWrapper {
+		width: 90%;
+	}
+	.projectWrapper h1 {
+		font-size: 3em;
+		padding: 50px 0px;
+		text-align: center;
+		color: #666;
+	}
+	.projectWrapper img {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+	.projectWrapper p {
+		padding: 50px 0px 50px 0px;
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.3em;
+		color: #666;
+	}
+	.projectWrapper a {
+		font-weight: 600;
+		color: #666;
+		text-decoration: none;
 	}
 
 	/*Contact Page*/
@@ -639,7 +649,7 @@ body {
 /*Phone Size -----------------------------*/
 @media (max-width: 860px) {
 	.projectImgWrapper {
-		margin: 450px 23%;
+		margin: 420px 12%;
 	}
 }
 
@@ -695,7 +705,7 @@ body {
 	/*Project Page*/
 	.projectImgWrapper {
 		width: 100%;
-		margin: 450px 15%;
+		margin: 450px 0%;
 	}
 
 	/*Contact Page*/

@@ -1,0 +1,20 @@
+For this project I was appointed head of design - my task was to focus on front-end rendering and the general layout of the application. 
+
+Harvestr is built in reactjs, which meant clear communications from all parts of the team was essential in making the application function correctly. 
+
+Because the app is intended to be used on a range of devices, I had to make sure it was responsive before deployment, it now functions perfectly on almost any device. 
+
+We utilized github to manage the project effectively - branching for each feature and merging to a 'dev' branch once a feature had been completed.
+The application isn't designed for consumer use, so its authentication only allows admins and members of kiwiharvest to log in and actually use it. 
+
+Once the user has logged in, a list of tickets is displayed showing: 
+• The name of the respective organization 
+• The expected weight of the pick up or delivery 
+• The location (with google map implementation) 
+• Whether the organization is a donor or recipient (also depicted by two defining colours) 
+
+A driver is able to view each individual ticket to view any details, they're also able to put in an actual pick-up / drop-off weight and mark the ticket as completed (rendering it grey). 
+
+An operations manager is given the same privilages as the driver, but is also able to create tickets and new donors/recipients as well.
+
+We are still working on Harvestr to this day, recieving feedback from actual use by kiwiharvest members to see what we can change and enhance.
