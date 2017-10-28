@@ -7,6 +7,23 @@
 	<meta name="viewport" content='width=device-width,initial-scale=1,maximum-scale=1'>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		if ($(window).width() <= 520) {
+			$('#harvestrImg').attr('src', 'public/harvestrExamples300px.fw.png')
+			$('#inovoImg').attr('src', 'public/inovoExamples300px.fw.png')
+			$('#hawkImg').attr('src', 'public/hawkExamplesAbout300px.fw.png')
+			$('#doggoImg').attr('src', 'public/doggoExamplesSlide300px.fw.png')
+			$('#myleagueImg').attr('src', 'public/myleagueExamples300px.fw.png')
+		} else if ($(window).width() <= 720) {
+			$('#harvestrImg').attr('src', 'public/harvestrExamples500px.fw.png')
+			$('#inovoImg').attr('src', 'public/inovoExamples500px.fw.png')
+			$('#hawkImg').attr('src', 'public/hawkExamplesAbout500px.fw.png')
+			$('#doggoImg').attr('src', 'public/doggoExamplesSlide500px.fw.png')
+			$('#myleagueImg').attr('src', 'public/myleagueExamples500px.fw.png')
+			}
+		})
+	</script>
 </head>
 <body>
 	<div class="mainWrapper">
@@ -37,17 +54,17 @@
 					</p>
 				</div>
 				<div class="projectImgWrapper">
-					<img class="projectImg" src="public/harvestrExamples800px.fw.png"/>
-					<img class="projectImg" src="public/inovoExamples800px.fw.png"/>
-					<img class="projectImg" src="public/hawkExamplesAbout800px.fw.png"/>
-					<img class="projectImg" src="public/doggoExamples800px.fw.png"/>
-					<img class="projectImg" src="public/myleagueExamples800px.fw.png"/>
+					<img class="projectImg" src="public/harvestrExamples300px.fw.png"/>
+					<img class="projectImg" src="public/inovoExamples300px.fw.png"/>
+					<img class="projectImg" src="public/hawkExamplesAbout300px.fw.png"/>
+					<img class="projectImg" src="public/doggoExamplesSlide300px.fw.png"/>
+					<img class="projectImg" src="public/myleagueExamples300px.fw.png"/>
 				</div>
 			</div>
 			<section class="section">
 				<div class="projectWrapper">
 					<h1 class=""> Harvestr </h1>
-					<img class="" src="public/harvestrExamples800px.fw.png"/>
+					<img class="" id="harvestrImg" src="public/harvestrExamples800px.fw.png"/>
 					<p> Harvestr was our final project during our time at EDA. Utilizing React.js, Node.js and NPM, our class of 6 worked together to create an app that would help to solve a real world problem.<br/><br/>A class member had previously worked with a company called kiwiharvest, a non-profit organization commited to fetching excess produce and distributing it to those in need.<br/><br/>We wanted to create an application that would help kiwiharvest streamline their operations. We created Harvestr to allow their head communications and drivers to coordinate efficiently through a ticket system.<br/><br/>
 						<!-- <a href=""> Read more about Harvestr here </a> -->
 					</p>
@@ -57,7 +74,7 @@
 			<section class="section">
 				<div class="projectWrapper">
 					<h1 class=""> Inovo </h1>
-					<img class="" src="public/inovoExamples800px.fw.png"/>
+					<img class="" id="inovoImg" src="public/inovoExamples800px.fw.png"/>
 					<p> Inovo is the first commercial site I've ever built - I created the entire design, logo and site from scratch. I was fortunate enough to have a client who entrusted me to put all my talents to use in order to create exactly what he was after.<br/><br/>As of now, it is essentially a presence for my client's small business, and also an extensive catalogue of products available for purchase. It is not an e-commerce site just yet, but will evolve into one in the near future.<br/><br/>Inovo is built through Wordpress with a theme I developed, and utilizes several plugins in order to allow the showcasing of particular products, and also allows the user to contact the client directly through NinjaForms.<br/><br/>This site is currently not live, but it will be once all its products have been uploaded.
 						<!-- <a href=""> Read more about Harvestr here </a> -->
 					</p>
@@ -67,7 +84,7 @@
 			<section class="section">
 				<div class="projectWrapper">
 					<h1 class=""> HAWK </h1>
-					<img class="" src="public/hawkExamplesAbout800px.fw.png"/>
+					<img class="" id="hawkImg" src="public/hawkExamplesAbout800px.fw.png"/>
 					<p> HAWK is a personal project of mine which I've been developing for a few months now. It is built using the CodeIgniter PHP framework, and is simply a means to continually learn and familiarize myself with CodeIgniter and PHP in general.<br/><br/>As of now, HAWK features a Work, About and Contact page, but also allows users to create an account which will let them add testimonials to the site. There is also an admin portal, which features higher authorization such as being able to apply C.R.U.D to users and uploaded.<br/><br/>Once again, this is simply a self-learning project, it is not live and serves no real-world purpose as of yet. HAWK is also very minmalist - this is because it could also potentially be my own CodeIgniter boilerplate or template for future websites I build.
 						<!-- <a href=""> Read more about Harvestr here </a> -->
 					</p>
@@ -77,7 +94,7 @@
 			<section class="section">
 				<div class="projectWrapper">
 					<h1 class=""> Doggo </h1>
-					<img class="" src="public/doggoExamplesSlide800px.fw.png"/>
+					<img class="" id="doggoImg" src="public/doggoExamplesSlide800px.fw.png"/>
 					<p> Doggo began as my personal project at DevAcademy - I wanted to build something people would actually end up using, and I also wanted it to be built through React.js.<br/><br/> Doggo is kind of like a Facebook for dogs. Users can sign up and create a profile for their pooch, giving as much or little detail theyt want to share. Ultimately, users will be able to connect with other users to find a suitable playmate for their dog. Eventually, users will organize playdates, knowing that their dog's best friend is going to be at the location to ensure they get a good play and run-around.<br/><br/>Doggo is very much still in its early stages of development, and is currently a way for me to continue learning React.js and libraries associated with Node Package Manager.
 						<!-- <a href=""> Read more about Harvestr here </a> -->
 					</p>
@@ -87,7 +104,7 @@
 			<section class="section">
 				<div class="projectWrapper">
 					<h1 class=""> MyLeague </h1>
-					<img class="" src="public/myleagueExamples800px.fw.png"/>
+					<img class="" id="myleagueImg" src="public/myleagueExamples800px.fw.png"/>
 					<p> MyLeague is another project which I'd begun building during my time at DevAcademy - it is also built with React.js<br/><br/>MyLeague is based around the popular MOBA game "League of Legends", which features a myriad of champions to select from, each with their own unique look, stats, lore and abilities used in game.<br/><br/>The initial purpose of MyLeague was to match the user with their most compatible champion - done through a personality test form on the home page.<br/><br/>By analyzing such factors as mannerisms, playstyle and preferred games, MyLeague will determine the user's champion by taking these answers and referencing them against an object of traits. The, the app speaks to the League of Legends API to find a suitable match. MyLeague will also find the next closest matches as well, in case the user isn't happy with the first selected champion.<br/><br/>The matching process is still in development, and currently, MyLeague will only give you a list of the champions in the game. Clicking them will show you information about these characters for the user to find a match this way.
 						<!-- <a href=""> Read more about Harvestr here </a> -->
 					</p>
