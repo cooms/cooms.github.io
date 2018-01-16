@@ -85,7 +85,7 @@ body {
 }
 
 #titleSection {
-	background-image: url('laptopWorkdesk.jpg');
+	background: url('laptopWorkdesk.jpg') fixed repeat;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -200,10 +200,10 @@ body {
 
 /*PROJECTS -------------------------------------------------------------------*/
 
-#projectSection {
-	background: url('projectBackground.jpg') fixed repeat;
+.parallax-window {
+	z-index: 0;
+	background: transparent;
 }
-
 
 .projectHeader {
 	position: absolute;
@@ -216,12 +216,16 @@ body {
 }
 
 .projectHeader h1 {
+	z-index: 1;
+	position: relative;
 	margin: 100px auto 30px;
 	font-size: 3.5em;
 	font-weight: normal;
 }
 
 .projectHeader p {
+	z-index: 1;
+	position: relative;
 	margin: 30px auto;
 	width: 40%;
 	font-size: 1.3em;
@@ -236,6 +240,7 @@ body {
 }
 
 .projectImg {
+	z-index: 1;
 	align-self: center;
 	width: 17%;
 	height: auto;
