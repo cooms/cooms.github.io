@@ -478,7 +478,7 @@ body {
 /*Smaller Desktop -----------------------------*/
 @media (max-width: 1620px) {
 	#titleSection {
-		background: url("background.jpg") fixed repeat !important;
+		background: url("background.jpg") fixed repeat-y !important;
 	}
 	.indexBox {
 		background-color: #fff;
@@ -551,9 +551,6 @@ body {
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
 	#titleSection {
-		background-position: left;
-		background-attachment: fixed;
-		background-repeat: repeat-y;
 		height: 1800px;
 	}
 	.indexBox, .indexNav {
@@ -659,9 +656,6 @@ body {
 
 @media (max-width: 720px) {
 	#titleSection {
-		background-position: left;
-		background-attachment: fixed;
-		background-repeat: repeat-y;
 		height: 2700px;
 	}
 	.indexNav {
