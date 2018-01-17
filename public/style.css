@@ -478,7 +478,7 @@ body {
 /*Smaller Desktop -----------------------------*/
 @media (max-width: 1620px) {
 	#titleSection {
-		background-image: url("background.jpg");
+		background: url("background.jpg") fixed repeat !important;
 	}
 	.indexBox {
 		background-color: #fff;
