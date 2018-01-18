@@ -91,11 +91,11 @@ body {
 }
 
 .indexBox {
-	margin: 3% 0% 0% 5%;
+	margin: 5% 0% 0% 33%;
 	width: 30%;
 	position: absolute;
-
 	font-family: raleway;
+	text-align: center;
 }
 
 .indexBoxText h1 {
@@ -115,7 +115,7 @@ body {
 }
 
 .indexNav {
-	margin: 400px 0% 0% 3%;
+	margin: 25% 0% 0% 32%;
 	width: 30%;
 	position: absolute;
 
@@ -476,6 +476,13 @@ body {
 /*Media Queries --------------------------------------------------------------*/
 
 /*Smaller Desktop -----------------------------*/
+@media (max-width: 1666px) {
+	.indexNav {
+		margin: 27% 0% 0% 32%;
+	}
+}
+
+
 @media (max-width: 1620px) {
 	#titleSection {
 		background: url("background.jpg") fixed repeat-y !important;
@@ -483,6 +490,7 @@ body {
 	.indexBox {
 		background-color: #fff;
 		padding: 20px;
+		margin: 3% 0% 0% 5%;
 	}
 	.indexNav {
 		width: 50%;
@@ -551,6 +559,7 @@ body {
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
 	#titleSection {
+		background: url("background.jpg") fixed no-repeat !important;
 		height: 1800px;
 	}
 	.indexBox, .indexNav {
