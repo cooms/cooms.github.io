@@ -81,26 +81,27 @@ body {
 .section {
 	width: 100%;
 	min-height: 832px;
-	background-position: top left;
+	position: relative;
+	z-index: 2;
 }
 
 #titleSection {
 	background: url('laptopWorkdesk.jpg') fixed repeat;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .indexBox {
-	margin: 5% 0% 0% 33%;
+	margin: 10% 0% 0% 35%;
 	width: 30%;
 	position: absolute;
-	font-family: raleway;
+
 	text-align: center;
+	font-family: raleway;
 }
 
 .indexBoxText h1 {
 	padding: 0px 15px 0px 0px;
-	margin-bottom: 10px;
+
+	margin: 0px 0px 10px 0px;
 
 	font-weight: 400;
 	font-size: 3em;
@@ -115,7 +116,7 @@ body {
 }
 
 .indexNav {
-	margin: 25% 0% 0% 32%;
+	margin: 400px 0% 0% 3%;
 	width: 30%;
 	position: absolute;
 
@@ -137,7 +138,7 @@ body {
 	transition: .5s;
 }
 
-.indexHR, .indexParagraph, .indexProject, .contactParagraph {
+.indexNav, .indexHR, .indexParagraph, .indexProject, .contactParagraph {
 	display: none;
 }
 
@@ -200,11 +201,6 @@ body {
 
 /*PROJECTS -------------------------------------------------------------------*/
 
-.parallax-window {
-	z-index: 0;
-	background: transparent;
-}
-
 .projectHeader {
 	position: absolute;
 	margin: 0 0%;
@@ -216,19 +212,19 @@ body {
 }
 
 .projectHeader h1 {
-	z-index: 1;
-	position: relative;
 	margin: 100px auto 30px;
 	font-size: 3.5em;
 	font-weight: normal;
+	position: relative;
+	z-index: 2;
 }
 
 .projectHeader p {
-	z-index: 1;
-	position: relative;
 	margin: 30px auto;
 	width: 40%;
 	font-size: 1.3em;
+	position: relative;
+	z-index: 2;
 }
 
 .projectImgWrapper {
@@ -240,10 +236,19 @@ body {
 }
 
 .projectImg {
-	z-index: 1;
 	align-self: center;
 	width: 17%;
 	height: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.projectSection {
+	width: 100%;
+	min-height: 832px;
+	position: relative;
+	background-color: #fff;
+	z-index: 2;
 }
 
 .projectWrapper {
@@ -476,24 +481,19 @@ body {
 /*Media Queries --------------------------------------------------------------*/
 
 /*Smaller Desktop -----------------------------*/
-@media (max-width: 1666px) {
-	.indexNav {
-		margin: 27% 0% 0% 32%;
-	}
-}
-
-
 @media (max-width: 1620px) {
 	#titleSection {
-		background: url("background.jpg") fixed repeat-y !important;
+		background-image: url("background.jpg");
 	}
 	.indexBox {
 		background-color: #fff;
 		padding: 20px;
 		margin: 3% 0% 0% 5%;
+		text-align: left;
 	}
 	.indexNav {
 		width: 50%;
+		display: block;
 		position: static;
 		float: right;
 		margin:	1.5% -430px 0% 0%;
@@ -559,7 +559,8 @@ body {
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
 	#titleSection {
-		background: url("background.jpg") fixed no-repeat !important;
+		background-attachment: fixed;
+		background-repeat: repeat-y;
 		height: 1800px;
 	}
 	.indexBox, .indexNav {
@@ -665,7 +666,10 @@ body {
 
 @media (max-width: 720px) {
 	#titleSection {
-		height: 2700px;
+		background-position: left;
+		background-attachment: fixed;
+		background-repeat: repeat-y;
+		height: 3000px;
 	}
 	.indexNav {
 		margin-top: 625px;
