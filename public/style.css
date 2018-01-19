@@ -488,7 +488,7 @@ body {
 /*Smaller Desktop -----------------------------*/
 @media (max-width: 1620px) {
 	#titleSection {
-		background-image: url("background.jpg");
+		background: url("background.jpg") fixed;
 	}
 	.indexBox {
 		background-color: #fff;
@@ -746,6 +746,9 @@ body {
 @media (max-width: 550px) {
 	.aboutBox {
 		margin-top: 50%;
+	}
+	.header ul {
+		margin: 0 0 0 -4%;
 	}
 }
 
