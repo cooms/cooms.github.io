@@ -573,8 +573,6 @@ body {
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
 	#titleSection {
-		background-attachment: fixed;
-		background-repeat: repeat-y;
 		height: 1800px;
 	}
 	.indexBox, .indexNav {
@@ -676,15 +674,12 @@ body {
 /*Phone Size -----------------------------*/
 @media (max-width: 860px) {
 	.projectImgWrapper {
-		margin: 440px 12%;
+		margin: 440px 16%;
 	}
 }
 
 @media (max-width: 720px) {
 	#titleSection {
-		background-position: left;
-		background-attachment: fixed;
-		background-repeat: repeat-y;
 		height: 3000px;
 	}
 	.indexNav {
