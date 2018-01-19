@@ -29,7 +29,7 @@ body {
 	margin: 0px;
 
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 
 	box-shadow: 0px 2px 3px #777;
 }
@@ -201,6 +201,11 @@ body {
 
 /*PROJECTS -------------------------------------------------------------------*/
 
+.parallax-window {
+	width: 100%;
+	min-height: 832px;
+}
+
 .projectHeader {
 	position: absolute;
 	margin: 0 0%;
@@ -212,7 +217,7 @@ body {
 }
 
 .projectHeader h1 {
-	margin: 100px auto 30px;
+	margin: 150px auto 30px;
 	font-size: 3.5em;
 	font-weight: normal;
 	position: relative;
@@ -555,6 +560,15 @@ body {
 	}
 }
 
+@media (max-width: 1310px) {
+	.projectImgWrapper {
+		position: absolute;
+		width: 80%;
+		margin: 575px 10%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
 
 /*Tablet Size -----------------------------*/
 @media (max-width: 1024px)  {
@@ -606,10 +620,13 @@ body {
 	}
 
 	/*Project Page*/
+	.projectHeader h1 {
+		margin-top: 100px;
+	}
 	.projectImgWrapper {
 		display: block;
-		width: 80%;
-		margin: 380px 0% 0px 13%;
+		width: 70%;
+		margin: 420px 0% 0px 18%;
 		overflow: hidden;
 	}
 	.projectImg {
@@ -619,7 +636,6 @@ body {
 	.projectImg:last-of-type {
 		display: none;
 	}
-
 	.projectWrapper {
 		width: 90%;
 	}
@@ -660,7 +676,7 @@ body {
 /*Phone Size -----------------------------*/
 @media (max-width: 860px) {
 	.projectImgWrapper {
-		margin: 420px 12%;
+		margin: 440px 12%;
 	}
 }
 
@@ -714,9 +730,11 @@ body {
 	}
 
 	/*Project Page*/
+	.projectHeader h1 {
+		margin-top: 200px;
+	}
 	.projectImgWrapper {
-		width: 100%;
-		margin: 450px 0%;
+		display: none;
 	}
 
 	/*Contact Page*/
@@ -737,14 +755,6 @@ body {
 }
 
 @media (max-width: 540px) {
-	/*Project Page*/
-	.projectHeader {
-		margin-top: 150px;
-	}
-	.projectImgWrapper {
-		display: none;
-	}
-
 	/*Contact Page*/
 	.contactBox {
 		width: 85%;
