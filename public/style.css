@@ -196,6 +196,15 @@ body {
 	float: right;
 }
 
+.footerContact li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.footerContact li a:hover {
+	text-decoration: underline;
+}
+
 /*ABOUT ----------------------------------------------------------------------*/
 
 #aboutSection {
