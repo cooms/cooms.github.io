@@ -157,6 +157,45 @@ body {
 	text-decoration: none;
 }
 
+/*FOOTER ------------------------------*/
+
+.footer {
+	position: relative;
+	height: 150px;
+	margin: -50px 0px 0px 0px;
+	padding: 15px 0px 15px 0px;
+	background-color: white;
+	color: black;
+	font-family: raleway;
+	z-index: 2;
+}
+
+.footerNav {
+	margin: 0 0 0 15%;
+	width: 30%;
+	float: left;
+}
+
+.footerNav li, .footerContact li {
+	font-size: 1.3em;
+	list-style: none;
+	line-height: 1.5em;
+}
+
+.footerNav li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.footerLogo {
+	position: relative;
+}
+
+.footerContact {
+	margin: 0 15% 0 0;
+	float: right;
+}
+
 /*ABOUT ----------------------------------------------------------------------*/
 
 #aboutSection {
@@ -317,22 +356,6 @@ body {
 .contactBox p {
 	margin: 30px auto;
 	font-size: 2em;
-}
-
-
-/*FOOTER ---------------------------------------------------------------------*/
-
-.footer {
-	position: relative;
-	height: 25px;
-	padding: 5px;
-
-
-	background-color: white;
-	color: black;
-
-	font-family: raleway;
-	font-size: .85em;
 }
 
 /*RESPONSIVE HEADER ----------------------------------------------------------*/
@@ -543,6 +566,11 @@ body {
 	}
 	.bioPic {
 		width: 42%;
+	}
+
+	/* Footer */
+	.footerNav {
+		margin-left: 11%;
 	}
 }
 
