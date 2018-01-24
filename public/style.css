@@ -179,6 +179,7 @@ body {
 }
 
 .footerNav li, .footerContact li {
+	margin-left: 17px;
 	font-size: 1.3em;
 	list-style: none;
 }
@@ -528,6 +529,12 @@ body {
 
 /*Media Queries --------------------------------------------------------------*/
 
+@media (max-width: 1815px) {
+	.projectSection:last-of-type {
+		height: 1000px;
+	}
+}
+
 /*Smaller Desktop -----------------------------*/
 @media (max-width: 1620px) {
 	#titleSection {
@@ -610,6 +617,9 @@ body {
 		margin: 575px 10%;
 		display: flex;
 		justify-content: space-around;
+	}
+	.projectSection:last-of-type {
+		height: 1200px;
 	}
 }
 
