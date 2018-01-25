@@ -178,7 +178,7 @@ body {
 	width: 40%;
 }
 
-.footerNav li, .footerContact li {
+.footerNav li, .footer li {
 	margin-left: 17px;
 	font-size: 1.3em;
 	list-style: none;
@@ -359,7 +359,7 @@ body {
 
 .contactBox {
 	position: absolute;
-	margin: 150px 35%;
+	margin: 150px 33%;
 	padding: 30px;
 	width: 30%;
 	height: auto;
@@ -375,7 +375,7 @@ body {
 }
 
 .contactBox p {
-	margin: 30px auto;
+	margin: 30px -10px 0 0;
 	font-size: 2em;
 }
 
@@ -726,6 +726,17 @@ body {
 
 /*Phone Size -----------------------------*/
 @media (max-width: 860px) {
+	#titleSection {
+		background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+	}
 	.projectImgWrapper {
 		margin: 440px 16%;
 	}
